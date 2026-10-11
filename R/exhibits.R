@@ -26,25 +26,14 @@ interval <- function(lo, hi, scale = 1, digits = 2) {
   f <- function(x) formatC(scale * x, format = "f", digits = digits)
   paste0("[", f(lo), ", ", f(hi), "]")
 }
-tex_escape <- function(x) gsub("\\$", "\\\\$", gsub("&", "\\\\&", gsub("%", "\\\\%", x)))
-
-# A booktabs tabular. `groups` optionally names blocks of rows by their first index.
-write_tabular <- function(df, path, align, groups = NULL) {
-  stopifnot(nchar(gsub("p\\{[^}]*\\}", "p", align)) == ncol(df))
-  header <- paste(tex_escape(names(df)), collapse = " & ")
-  body <- apply(df, 1, function(r) paste(tex_escape(r), collapse = " & "))
-  lines <- character(0)
-  for (i in seq_along(body)) {
-    if (!is.null(groups) && as.character(i) %in% names(groups)) {
-      if (i > 1) lines <- c(lines, "\\addlinespace")
-      lines <- c(lines, sprintf("\\multicolumn{%d}{l}{\\emph{%s}} \\\\", ncol(df), groups[[as.character(i)]]))
-    }
-    lines <- c(lines, paste0(body[i], " \\\\"))
+# A booktabs tabular for \input{} inside a table float. `groups` names consecutive
+# blocks of rows by their sizes, as in kableExtra::pack_rows(index = ).
+write_table <- function(df, path, align, groups = NULL) {
+  tab <- knitr::kable(df, format = "latex", booktabs = TRUE, align = align, linesep = "")
+  if (!is.null(groups)) {
+    tab <- kableExtra::pack_rows(tab, index = groups, bold = FALSE, italic = TRUE)
   }
-  writeLines(c(
-    sprintf("\\begin{tabular}{%s}", align), "\\toprule", paste0(header, " \\\\"), "\\midrule",
-    lines, "\\bottomrule", "\\end{tabular}"
-  ), path)
+  writeLines(tab, path)
 }
 
 write_macros <- function(values, path) {

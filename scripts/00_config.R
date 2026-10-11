@@ -1,6 +1,8 @@
 suppressPackageStartupMessages({
   library(dplyr)
   library(tidyr)
+  library(tibble)
+  library(purrr)
   library(ggplot2)
 })
 

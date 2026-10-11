@@ -3,7 +3,7 @@ source("scripts/00_config.R")
 read_tab <- function(name) readr::read_csv(table_path(paste0(name, ".csv")), show_col_types = FALSE)
 
 truth <- read_tab("benchmarks")
-undocumented <- readr::read_csv(data_path("benchmarks.csv"), show_col_types = FALSE) |>
+undocumented <- read_data("benchmarks.csv") |>
   filter(item == "undocumented") |>
   pull(value)
 effects <- read_tab("effects")
@@ -17,17 +17,16 @@ thermo_pooled <- read_tab("thermometer_pooled")
 soda_means <- read_tab("soda_means")
 soda_test <- read_tab("soda_test")
 samples <- read_tab("samples")
-lt <- readr::read_csv(data_path("answers_timing.csv"), show_col_types = FALSE)
+lt <- read_data("answers_timing.csv")
 
-item_label <- setNames(paste0(items$party, ": ", items$label), items$item)
-item_short <- setNames(
+item_short <- set_names(
   c(
     "Dem. black", "Dem. atheist/agnostic", "Dem. LGB", "Dem. union", "Rep. $250K+", "Rep. evangelical",
     "Rep. Southern", "Rep. 65+", "U.S. foreign-born", "Poor who are black"
   ),
   items$item
 )
-p_stars <- function(p) ifelse(p < 0.01, "***", ifelse(p < 0.05, "**", ifelse(p < 0.1, "*", "")))
+p_stars <- function(p) case_when(p < 0.01 ~ "***", p < 0.05 ~ "**", p < 0.1 ~ "*", .default = "")
 
 # Figure 1: pooled effects of each elicitation change on signed error.
 fig1 <- effects |>
@@ -55,11 +54,10 @@ item_plot <- function(d, labels) {
       comparison = factor(labels[group_b], unname(labels)),
       item_name = factor(item_short[item], rev(item_short))
     )
-  long <- bind_rows(
-    d |> transmute(comparison, item, item_name, arm = "Baseline", mean = mean_a, se = se_a),
-    d |> transmute(comparison, item, item_name, arm = "Treatment", mean = mean_b, se = se_b)
-  ) |>
-    mutate(lo = mean - 1.96 * se, hi = mean + 1.96 * se)
+  long <- d |>
+    select(comparison, item, item_name, mean_a, se_a, mean_b, se_b) |>
+    pivot_longer(c(mean_a, se_a, mean_b, se_b), names_to = c(".value", "arm"), names_sep = "_") |>
+    mutate(arm = if_else(arm == "a", "Baseline", "Treatment"), lo = mean - 1.96 * se, hi = mean + 1.96 * se)
   tr <- d |>
     distinct(comparison, item, item_name) |>
     left_join(select(truth, item, truth), by = "item")
@@ -108,20 +106,20 @@ fig_density <- lt |>
 save_figure(fig_density, "timing_density", 7, 3.6)
 
 # Tables.
-write_tabular(
+write_table(
   samples |>
     filter(variable != "N") |>
     pivot_wider(names_from = study, values_from = value) |>
     transmute(
       ` ` = level,
       `Study 1 (2014)` = num(`Study 1`, 1),
-      `Study 2 (2016)` = ifelse(is.na(`Study 2`), "--", num(`Study 2`, 1))
+      `Study 2 (2016)` = if_else(is.na(`Study 2`), "--", num(`Study 2`, 1))
     ),
   table_path("samples.tex"), "lrr",
-  groups = c(`1` = "Party", `4` = "Gender", `6` = "Race and ethnicity", `10` = "Education", `15` = "Age")
+  groups = c(Party = 3, Gender = 2, "Race and ethnicity" = 4, Education = 5, Age = 3)
 )
 
-write_tabular(
+write_table(
   base_rates |>
     mutate(item = factor(item, party_items)) |>
     arrange(item) |>
@@ -136,7 +134,7 @@ write_tabular(
   table_path("base_rates.tex"), "lrrrrrrrr"
 )
 
-write_tabular(
+write_table(
   ks |>
     mutate(cell = paste0(num(d, 2), " (", num(p_bh, 2), ")")) |>
     select(condition, item, cell) |>
@@ -146,7 +144,7 @@ write_tabular(
   table_path("ks.tex"), "llll"
 )
 
-write_tabular(
+write_table(
   thermo |>
     mutate(item = factor(item, c("black", "aa", "lgb", "union", "rich", "evang", "south", "young"))) |>
     arrange(item) |>
@@ -157,12 +155,12 @@ write_tabular(
   table_path("thermometer.tex"), "lrrrr"
 )
 
-write_tabular(
+write_table(
   nose |>
     mutate(order = match(item, c(items$item, "all"))) |>
     arrange(order) |>
     transmute(
-      Item = ifelse(item == "all", "All items (item fixed effects)", item_short[item]),
+      Item = if_else(item == "all", "All items (item fixed effects)", item_short[item]),
       `Time pressure` = pct(mean_a, 1), `Time requirement` = pct(mean_b, 1),
       Difference = pct(diff, 1), `95% CI` = interval(lo, hi, scale = 100, digits = 1), p = num(p, 2)
     ),
@@ -170,7 +168,7 @@ write_tabular(
 )
 
 outcome_names <- c(err = "Signed error", abs_err = "Absolute error", pct_err = "Percentage bias")
-write_tabular(
+write_table(
   alt |>
     transmute(
       Outcome = outcome_names[outcome], Comparison = comparison,
@@ -180,28 +178,38 @@ write_tabular(
   table_path("alt_outcomes.tex"), "llrrrrr"
 )
 
-write_tabular(
+write_table(
   truth |>
     transmute(
       Item = item_short[item], `True share` = num(truth, 1),
-      `Population base rate` = ifelse(is.na(base), "--", num(base, 1))
+      `Population base rate` = if_else(is.na(base), "--", num(base, 1))
     ),
   table_path("benchmarks.tex"), "lrr"
 )
 
-# Manuscript numbers.
-eff <- function(cmp, col) effects[[col]][effects$comparison == cmp]
-ic <- function(exp, b, it, col) {
-  contrasts[[col]][contrasts$experiment == exp & contrasts$group_b == b & contrasts$item == it]
+# Manuscript numbers. `the()` pulls one cell and fails loudly if a lookup matches
+# zero or several rows.
+the <- function(df, col, ...) {
+  out <- df |>
+    filter(...) |>
+    pull({{ col }})
+  stopifnot(length(out) == 1)
+  out
 }
-br <- function(it, col) base_rates[[col]][base_rates$item == it]
+eff <- function(cmp, col) the(effects, {{ col }}, comparison == cmp)
+ic <- function(exp, b, it, col) the(contrasts, {{ col }}, experiment == exp, group_b == b, item == it)
+br <- function(it, col) the(base_rates, {{ col }}, item == it)
 timing_items <- filter(contrasts, experiment == "Timing")
 wording_items <- filter(contrasts, experiment == "Wording")
 word_count <- c("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten")
-soda_no <- soda_means[!soda_means$asked_base, ]
-soda_yes <- soda_means[soda_means$asked_base, ]
-nose_all <- nose[nose$item == "all", ]
-n_samples <- samples$value[samples$variable == "N"]
+in_words <- function(n) word_count[n + 1]
+soda_no <- filter(soda_means, !asked_base)
+soda_yes <- filter(soda_means, asked_base)
+nose_all <- filter(nose, item == "all")
+n_samples <- samples |>
+  filter(variable == "N") |>
+  pull(value)
+true_share <- deframe(select(truth, item, truth))
 
 write_macros(list(
   nStudyOne = n_samples[1], nStudyTwo = n_samples[2],
@@ -217,34 +225,36 @@ write_macros(list(
   incLo = num(eff("Incentives", "lo"), 1), incHi = num(eff("Incentives", "hi"), 1),
   brEffect = num(eff("Base rates given", "estimate"), 1),
   brLo = num(eff("Base rates given", "lo"), 1), brHi = num(eff("Base rates given", "hi"), 1),
-  brItemsUp = word_count[sum(filter(contrasts, group_b == "baserates_given")$diff > 0) + 1],
+  brItemsUp = c(paste(word_count[1:8], "of the eight"), "all eight")[
+    sum(filter(contrasts, group_b == "baserates_given")$diff > 0) + 1
+  ],
   timeEffect = num(abs(eff("Time requirement", "estimate")), 1),
   timeLo = num(abs(eff("Time requirement", "hi")), 1), timeHi = num(abs(eff("Time requirement", "lo")), 1),
   fastBias = num(eff("Time requirement", "baseline"), 1),
   slowBias = num(eff("Time requirement", "treated"), 1),
   timeDecline = pct(abs(eff("Time requirement", "estimate")) / eff("Time requirement", "baseline")),
-  timeItemsLower = word_count[sum(timing_items$diff < 0) + 1],
-  timeItemsFive = word_count[sum(timing_items$p < 0.05) + 1],
-  timeItemsTen = word_count[sum(timing_items$p < 0.1) + 1],
+  timeItemsLower = in_words(sum(timing_items$diff < 0)),
+  timeItemsFive = in_words(sum(timing_items$p < 0.05)),
+  timeItemsTen = in_words(sum(timing_items$p < 0.1)),
   timePoorDiff = num(abs(ic("Timing", "slow", "blackpoor", "diff")), 2),
   wordEffect = num(abs(eff("Percent wording", "estimate")), 1),
   wordLo = num(eff("Percent wording", "lo"), 1), wordHi = num(eff("Percent wording", "hi"), 1),
   hundredBias = num(eff("Percent wording", "baseline"), 1),
   percentBias = num(eff("Percent wording", "treated"), 1),
-  hundredLowerItems = word_count[sum(wording_items$diff > 0) + 1],
+  hundredLowerItems = in_words(sum(wording_items$diff > 0)),
   wordImm = num(ic("Wording", "percent", "imm", "diff"), 1),
   wordLgb = num(abs(ic("Wording", "percent", "lgb", "diff")), 1),
   noseFast = pct(nose_all$mean_a, 1), noseSlow = pct(nose_all$mean_b, 1),
   noseDiff = pct(nose_all$diff, 1), noseP = num(nose_all$p, 2),
-  absTimeEffect = num(abs(alt$estimate[alt$outcome == "abs_err" & alt$comparison == "Time requirement"]), 1),
+  absTimeEffect = num(abs(the(alt, estimate, outcome == "abs_err", comparison == "Time requirement")), 1),
   thermoPooled = num(abs(thermo_pooled$estimate), 2),
   thermoLo = num(thermo_pooled$lo, 2), thermoHi = num(thermo_pooled$hi, 2),
   thermoN = thermo_pooled$n,
   lgbBaseTrue = num(br("lgb", "base_truth"), 1), lgbBasePerceived = num(br("lgb", "base_perceived"), 1),
   richBaseTrue = num(br("rich", "base_truth"), 1), richBasePerceived = num(br("rich", "base_perceived"), 1),
   blackBaseTrue = num(br("black", "base_truth"), 1), blackBasePerceived = num(br("black", "base_perceived"), 1),
-  gapSigCount = word_count[sum(base_rates$gap_p < 0.05) + 1],
-  ddPosCount = word_count[sum(base_rates$dd_p < 0.05 & base_rates$dd > 0) + 1],
+  gapSigCount = in_words(sum(base_rates$gap_p < 0.05)),
+  ddPosCount = in_words(sum(base_rates$dd_p < 0.05 & base_rates$dd > 0)),
   ddNegCount = c("none", word_count[-1])[sum(base_rates$dd_p < 0.05 & base_rates$dd < 0) + 1],
   ddBlack = num(br("black", "dd"), 1),
   ddBlackLo = num(br("black", "dd_lo"), 1), ddBlackHi = num(br("black", "dd_hi"), 1),
@@ -253,7 +263,7 @@ write_macros(list(
   sodaYesBase = num(soda_yes$base, 1),
   sodaNoGap = num(soda_no$gap, 1), sodaYesGap = num(soda_yes$gap, 1),
   sodaDiff = num(soda_test$diff, 1), sodaLo = num(soda_test$lo, 1), sodaHi = num(soda_test$hi, 1),
-  immTruth = num(truth$truth[truth$item == "imm"], 1),
+  immTruth = num(true_share[["imm"]], 1),
   undocShare = num(undocumented, 1),
-  poorTruth = num(truth$truth[truth$item == "blackpoor"], 1)
+  poorTruth = num(true_share[["blackpoor"]], 1)
 ), table_path("macros.tex"))

@@ -13,9 +13,13 @@ Description: Data, analyses and corrected manuscript for a 2018 book chapter on
 Encoding: UTF-8
 Depends: R (>= 4.4.0)
 Imports:
+    broom,
     dplyr,
     estimatr,
     ggplot2,
+    kableExtra,
+    knitr,
+    purrr,
     readr,
     rprojroot,
     tibble,
