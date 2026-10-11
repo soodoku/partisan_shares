@@ -1,10 +1,11 @@
 # Estimators. Pooled effects regress an outcome on a treatment indicator with item
 # fixed effects, so they compare answers to the same item, and with standard errors
-# clustered by respondent (CR1 with Stata's small-sample correction).
+# clustered by respondent (CR2, the bias-reduced estimator, with Bell-McCaffrey degrees
+# of freedom; estimatr's default with clusters).
 
 pooled_effect <- function(answers, treatment, outcome = "error", label = treatment) {
   fit <- estimatr::lm_robust(reformulate(treatment, outcome),
-    fixed_effects = ~item, clusters = respondent_id, data = answers, se_type = "stata"
+    fixed_effects = ~item, clusters = respondent_id, data = answers
   )
   arm_means <- answers |>
     summarise(mean = mean(.data[[outcome]]), .by = all_of(treatment)) |>
@@ -138,7 +139,7 @@ thermometer_models <- function(affect) {
     unnest(coefficient) |>
     arrange(item)
   pooled <- estimatr::lm_robust(perceived ~ thermometer,
-    fixed_effects = ~item, clusters = respondent_id, data = ratings, se_type = "stata"
+    fixed_effects = ~item, clusters = respondent_id, data = ratings
   )
   list(
     by_item = by_item,
