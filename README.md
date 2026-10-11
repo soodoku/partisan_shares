@@ -2,7 +2,7 @@
 
 Douglas J. Ahler and Gaurav Sood
 
-[Paper](ms/main.pdf)
+[Paper](ms/main.pdf) · [Online appendix on Harvard Dataverse](https://doi.org/10.7910/DVN/2JXAYZ)
 
 A corrected version of Ahler and Sood (2018), "Measuring Perceptions of Shares of Groups," in *Misinformation and Mass Audiences*, edited by Brian G. Southwell, Emily A. Thorson and Laura Sheble (University of Texas Press), pp. 71–90.
 
