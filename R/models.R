@@ -163,6 +163,20 @@ soda_experiment <- function(s2) {
   list(means = means, test = test)
 }
 
+# Timing compliance from the page timers: seconds from page load to submission.
+timing_compliance <- function(s2) {
+  s2 |>
+    filter(study == "timing") |>
+    select(matches("^timer_.+_page_submit$")) |>
+    pivot_longer(everything(), names_to = "page", values_to = "seconds", values_drop_na = TRUE) |>
+    mutate(condition = if_else(grepl("_fast_", page), "fast", "slow")) |>
+    summarise(
+      pages = n(), median = median(seconds), under_15 = sum(seconds < 15), over_11 = sum(seconds > 11),
+      .by = condition
+    ) |>
+    arrange(condition)
+}
+
 # Answers on either whole number bracketing the true share (8 or 9 for 8.7), among the
 # items each respondent was actually shown. Spikes here would suggest looking answers up.
 on_the_nose <- function(long) {

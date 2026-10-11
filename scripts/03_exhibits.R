@@ -17,6 +17,7 @@ thermo_pooled <- read_tab("thermometer_pooled")
 soda_means <- read_tab("soda_means")
 soda_test <- read_tab("soda_test")
 samples <- read_tab("samples")
+compliance <- read_tab("timing_compliance")
 lt <- read_data("answers_timing.csv")
 
 item_short <- set_names(
@@ -244,6 +245,12 @@ write_macros(list(
   hundredLowerItems = in_words(sum(wording_items$diff > 0)),
   wordImm = num(ic("Wording", "percent", "imm", "diff"), 1),
   wordLgb = num(abs(ic("Wording", "percent", "lgb", "diff")), 1),
+  slowPages = format(the(compliance, pages, condition == "slow"), big.mark = ","),
+  slowUnder = the(compliance, under_15, condition == "slow"),
+  slowMedian = num(the(compliance, median, condition == "slow"), 1),
+  fastPages = format(the(compliance, pages, condition == "fast"), big.mark = ","),
+  fastOver = the(compliance, over_11, condition == "fast"),
+  fastMedian = num(the(compliance, median, condition == "fast"), 1),
   noseFast = pct(nose_all$mean_a, 1), noseSlow = pct(nose_all$mean_b, 1),
   noseDiff = pct(nose_all$diff, 1), noseP = num(nose_all$p, 2),
   absTimeEffect = num(abs(the(alt, estimate, outcome == "abs_err", comparison == "Time requirement")), 1),

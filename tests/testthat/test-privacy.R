@@ -1,7 +1,7 @@
 test_that("no identifying columns ship in data/", {
   banned <- c(
-    "workerid", "responseid", "assignmentid", "ipaddress", "locationlatitude", "locationlongitude",
-    "startdate", "enddate", "state", "comments"
+    "workerid", "responseid", "assignmentid", "ipaddress", "latitude", "longitude",
+    "startdate", "enddate", "recordeddate", "browser", "comment", "text", "email", "name"
   )
   for (f in list.files(data_path(), pattern = "\\.csv$", full.names = TRUE)) {
     cols <- tolower(names(readr::read_csv(f, n_max = 0, show_col_types = FALSE)))

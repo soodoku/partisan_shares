@@ -45,11 +45,44 @@ test_that("the poverty benchmark divides by all poor people", {
   expect_equal(truth$truth[truth$item == "blackpoor"], round(100 * 10755 / 46657, 1))
 })
 
-test_that("Study 2 demographics exclude the separate experiment", {
-  # The published appendix described all 1,507 records, including a third
-  # experiment, and listed 19.4% Latino; among the 596 analyzed it is near 5%.
-  expect_equal(nrow(s2), 596L)
-  expect_lt(mean(s2$race == "Hispanic or Latino", na.rm = TRUE), 0.06)
+test_that("Study 2 ships all three experiments but the sample table describes two", {
+  # Bayesian-cues arms as reported in Ahler and Sood (2023), n = 911.
+  expect_equal(nrow(s2), 1507L)
+  expect_equal(as.vector(table(s2$bayes_cond)[c("base_rate", "control", "group_comp")]), c(313L, 306L, 292L))
+  # The published appendix described all 1,507 records and listed 19.4% Latino;
+  # among the 596 analyzed it is near 5%.
+  samples <- readr::read_csv(table_path("samples.csv"), show_col_types = FALSE)
+  expect_equal(samples$value[samples$variable == "N" & samples$study == "Study 2"], 596)
+  analyzed <- filter(s2, study != "bayes")
+  expect_lt(mean(analyzed$race == "Hispanic or Latino", na.rm = TRUE), 0.06)
+})
+
+test_that("knowledge scores are missing where the battery was not asked", {
+  expect_true(all(is.na(s2$pk_index[s2$study != "bayes"])))
+  expect_false(anyNA(s2$pk_index[s2$study == "bayes"]))
+})
+
+test_that("each timing page timer belongs to its own answer", {
+  # Party items were shown at random, so a timer filed under the wrong item would be
+  # missing for different respondents than its answer.
+  party_answers <- grep("^timing_(dem|rep)_.+_(fast|slow)$", names(s2), value = TRUE)
+  for (a in party_answers) {
+    submit <- s2[[paste0(sub("^timing_", "timer_", a), "_page_submit")]]
+    expect_gt(mean(is.na(submit) == is.na(s2[[a]])), 0.998, label = a)
+  }
+  compliance <- timing_compliance(s2)
+  expect_lt(compliance$over_11[compliance$condition == "fast"], 5)
+  expect_lt(compliance$under_15[compliance$condition == "slow"], 10)
+})
+
+test_that("Study 1 sum-to-100 allocations add to 100", {
+  totals <- s1 |>
+    filter(condition == "complexask") |>
+    mutate(
+      dem_race = rowSums(pick(starts_with("sum100_dem_race"))),
+      rep_income = rowSums(pick(starts_with("sum100_rep_income")))
+    )
+  expect_true(all(c(totals$dem_race, totals$rep_income) %in% c(100, NA)))
 })
 
 test_that("Study 1 Republicans and independents are not swapped", {

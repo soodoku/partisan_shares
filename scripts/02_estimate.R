@@ -66,5 +66,7 @@ soda <- soda_experiment(s2)
 readr::write_csv(soda$means, table_path("soda_means.csv"))
 readr::write_csv(soda$test, table_path("soda_test.csv"))
 
-# Sample flow for Study 2.
-readr::write_csv(count(s2, study, timing_cond, soda_cond), table_path("study2_assignment.csv"))
+readr::write_csv(timing_compliance(s2), table_path("timing_compliance.csv"))
+
+# Sample flow for Study 2, all three experiments.
+readr::write_csv(count(s2, study, timing_cond, soda_cond, bayes_cond), table_path("study2_assignment.csv"))

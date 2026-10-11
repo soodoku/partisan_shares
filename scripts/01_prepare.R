@@ -2,7 +2,9 @@ source("scripts/00_config.R")
 
 truth <- truth_table()
 s1 <- read_study1()
-s2 <- read_study2()
+# Study 2 rows from the two experiments analyzed here; the Bayesian-cues rows ship in
+# data/ but belong to Ahler and Sood (2022).
+s2 <- filter(read_study2(), study %in% c("wording", "timing"))
 
 readr::write_csv(study1_long(s1, truth), data_path("answers_study1.csv"))
 readr::write_csv(wording_long(s2, truth), data_path("answers_wording.csv"))

@@ -57,13 +57,14 @@ make check     # analysis, figures, tables, manuscript, lint, tests
 
 | Path | Contents |
 |---|---|
-| `data/study1_2014.csv` | Study 1 answers, base-rate estimates and demographics, from `alt_exps_data.dta` in [soodoku/partisan_heads](https://github.com/soodoku/partisan_heads) |
-| `data/affect_2014.csv` | April 2014 survey, one row per respondent: group thermometers and out-party share estimates (`extremity_exp_data.dta`, same repo) |
-| `data/study2_2016.csv` | Study 2 answers for the timing and wording experiments; worker IDs, timestamps, browser data, state and comments removed |
-| `data/anes_2012.csv` | The ANES 2012 columns behind the party benchmarks and base rates; state reduced to a Southern indicator |
+| `data/study1_2014.csv` | Study 1: answers, base-rate estimates, full sum-to-100 allocations, page timers and demographics |
+| `data/affect_2014.csv` | April 2014 survey: group thermometers and out-party share estimates |
+| `data/study2_2016.csv` | Study 2, all three experiments fielded: timing (with page timers), wording, and the Bayesian-cues experiment reported in Ahler and Sood (2023) |
+| `data/anes_2012.csv` | The ANES 2012 columns behind the party benchmarks and base rates |
+| `data/codebook.md` | What every column in these files means, and where each file comes from |
 | `data/benchmarks.csv` | Benchmarks not computed from the ANES, with sources |
 | `data/answers_*.csv` | Long-format answers, derived by `scripts/01_prepare.R` |
 | `R/` | Data shaping, estimators, exhibit helpers |
-| `scripts/` | `00_extract.R` (manual: writes `data/` from the original archive), then `01_prepare.R`, `02_estimate.R`, `03_exhibits.R` |
+| `scripts/` | `00_extract.R` (manual: writes `data/` from soodoku/partisan_heads and soodoku/partisan_typecast), then `01_prepare.R`, `02_estimate.R`, `03_exhibits.R` |
 | `tabs/`, `figs/` | Generated tables, figures and manuscript macros; `figs/study2_*.png` are screenshots of the Study 2 treatments |
 | `docs/instrument_draft_2016_06.pdf` | A June 2016 draft of the Study 2 instrument; the fielded version differs |
