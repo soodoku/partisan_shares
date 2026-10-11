@@ -1,0 +1,28 @@
+Package: partisanShares
+Type: Project
+Title: Measuring Perceptions of the Share of Groups
+Version: 1.0.0
+Authors@R: c(
+    person("Douglas J.", "Ahler", role = "aut"),
+    person("Gaurav", "Sood", role = c("aut", "cre"), email = "gsood07@gmail.com")
+  )
+Description: Data, analyses and corrected manuscript for a 2018 book chapter on
+    measuring perceptions of how large groups are, using MTurk survey experiments
+    from 2014 and 2016 on time limits, question wording, sum-to-100 constraints,
+    accuracy incentives and base rates.
+Encoding: UTF-8
+Depends: R (>= 4.4.0)
+Imports:
+    dplyr,
+    estimatr,
+    ggplot2,
+    readr,
+    rprojroot,
+    tibble,
+    tidyr
+Suggests:
+    haven,
+    lintr,
+    renv,
+    styler,
+    testthat

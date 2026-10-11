@@ -1,0 +1,9 @@
+item,quantity,value,source,note
+aa,party,8.7,"Pew Research Center (2012), ""Nones"" on the Rise",Share of Democrats and leaners: 73% of atheists/agnostics are Democrats x 5.7% atheist/agnostic / 48% Democrats (Ahler and Sood 2018)
+aa,base,5.7,"Pew Research Center (2012), ""Nones"" on the Rise",Atheists and agnostics as a share of U.S. adults
+evang,party,34.3,"Pew Research Center, as used in Ahler and Sood (2018)",White evangelical Protestants as a share of Republicans and leaners; the 2014 replication code cites a Pew religion report without a table reference
+evang,base,19,"Pew Research Center (2012), ""Nones"" on the Rise",White evangelical Protestants as a share of U.S. adults
+imm,population,13.2,"Pew Research Center (2016), Statistical Portrait of the Foreign-Born Population in the United States, 2014 (2014 ACS)",Foreign-born share of U.S. residents; the latest estimate when the survey was fielded
+blackpoor,population,23.1,"U.S. Census Bureau (2015), Income and Poverty in the United States: 2014 (P60-252), Table 3","10,755 Black alone / 46,657 thousand people in poverty"
+soda,population,24,"Mendes (2013), Gallup, Regular Soda Popular With Young, Nonwhite, Low-Income",Share of U.S. adults who drink diet soda
+undocumented,population,3.5,"Krogstad and Passel (2015), Pew Research Center, 5 Facts about Illegal Immigration in the U.S.",11.3 million unauthorized immigrants in 2014 as a share of U.S. residents

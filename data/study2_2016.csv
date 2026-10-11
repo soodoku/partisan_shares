@@ -1,0 +1,597 @@
+respondent_id,study,timing_cond,soda_cond,pcomp_rep_old_perc,pcomp_rep_evang_perc,pcomp_rep_rich_perc,pcomp_rep_south_perc,pcomp_dem_black_perc,pcomp_dem_aa_perc,pcomp_dem_union_perc,pcomp_dem_lgb_perc,pcomp_rep_old_100,pcomp_rep_evang_100,pcomp_rep_rich_100,pcomp_rep_south_100,pcomp_dem_black_100,pcomp_dem_aa_100,pcomp_dem_union_100,pcomp_dem_lgb_100,imm_perc,imm_100,black_poor_perc,black_poor_100,timing_dem_black_fast,timing_dem_aa_fast,timing_dem_union_fast,timing_dem_lgb_fast,timing_rep_old_fast,timing_rep_evang_fast,timing_rep_south_fast,timing_rep_rich_fast,timing_soda_br_fast,timing_soda_women_fast,timing_soda_men_fast,timing_imm_fast,timing_blackpoor_fast,timing_dem_black_slow,timing_dem_aa_slow,timing_dem_union_slow,timing_dem_lgb_slow,timing_rep_old_slow,timing_rep_evang_slow,timing_rep_south_slow,timing_rep_rich_slow,timing_soda_br_slow,timing_soda_men_slow,timing_soda_women_slow,timing_imm_slow,timing_blackpoor_slow,soda_br,soda_men,soda_women,num_index,pid3,sex,race,age
+1,wording,,no_br,20,30,20,15,70,20,80,40,,,,,,,,,28,,40,,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,59,0.5,Dem,Male,Asian or Pacific Islander,25
+2,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,24,33,27,,,,30,6,4,6,15,43,,,,1,Dem,Male,Black or African American,36
+3,timing,fast,br,,,,,,,,,,,,,,,,,,,,,76,81,62,,,72,,,83,84,52,51,75,,,,,,,,,,,,,,,,,0.5,Rep,Female,Asian or Pacific Islander,33
+4,timing,fast,br,,,,,,,,,,,,,,,,,,,,,38,11,,12,,42,,,11,17,7,19,35,,,,,,,,,,,,,,,,,1,Dem,Male,Asian or Pacific Islander,33
+5,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,46,30,31,,,,61,,35,22,23,12,,,,,,,,,,,,,,,,,1,Dem,Female,White or Caucasian,27
+6,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,,20,,,15,40,26,18,16,9,10,35,,,,,,,,,,,,,,,,,1,Rep,Male,White or Caucasian,38
+7,wording,,br,33,34,6,44,28,15,24,35,,,,,,,,,19,,,55,,,,,,,,,,,,,,,,,,,,,,,,,,,35,30,40,1,Rep,Male,White or Caucasian,23
+8,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,14,14,31,20,,,19,17,23,15,35,,,,1,Ind,Male,White or Caucasian,27
+9,wording,,no_br,,,,,,,,,14,13,13,0,38,0,11,16,,23,22,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,37,0.25,Dem,Female,Black or African American,37
+10,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,9,80,,,91,80,,61,81,39,72,72,,,,,,,,,,,,,,,,,0.75,Dem,Female,Black or African American,34
+11,timing,fast,br,,,,,,,,,,,,,,,,,,,,,40,,,,,70,60,10,30,50,10,25,45,,,,,,,,,,,,,,,,,0.75,Dem,Male,White or Caucasian,26
+12,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,10,,28,1,,,51,,,30,20,90,20,,,,,,,,,,,,,,,,,0.75,Rep,Male,White or Caucasian,56
+13,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,36,,,,60,,42,17,,32,56,27,40,,,,0.75,Ind,Female,White or Caucasian,44
+14,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9,,,,19,,28,1,,56,55,7,11,,,,1,Dem,Male,Hispanic or Latino,35
+15,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,,40,,30,,,25,25,20,46,15,65,,,,1,Dem,Male,White or Caucasian,32
+16,wording,,br,55,72,15,65,15,80,15,20,,,,,,,,,,10,50,,,,,,,,,,,,,,,,,,,,,,,,,,,,55,60,85,0.25,Rep,Male,White or Caucasian,36
+17,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,,,26,56,70,42,,,48,13,41,48,,,,,,,,,,,,,,,,,1,Dem,Male,Asian or Pacific Islander,40
+18,wording,,br,65,71,31,44,60,32,19,78,,,,,,,,,25,,36,,,,,,,,,,,,,,,,,,,,,,,,,,,,39,30,56,1,Dem,Female,White or Caucasian,31
+19,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,39,,28,,77,,68,42,53,27,58,44,,,,,,,,,,,,,,,,,0.5,Rep,Female,White or Caucasian,59
+20,wording,,no_br,,,,,,,,,25,75,80,35,40,10,15,10,,10,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,,80,75,0.75,Dem,Female,White or Caucasian,59
+21,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,35,,15,10,45,,,,25,25,25,20,15,,,,0.75,Dem,Male,Asian or Pacific Islander,30
+22,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,80,,45,90,,,50,,48,30,70,8,25,,,,0.5,Dem,Female,White or Caucasian,32
+23,wording,,no_br,55,10,35,75,35,20,15,10,,,,,,,,,,25,74,,,,,,,,,,,,,,,,,,,,,,,,,,,,,85,61,0.5,Dem,Female,White or Caucasian,52
+24,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,,38,,39,76,61,,25,33,21,29,52,,,,,,,,,,,,,,,,,1,Rep,Male,White or Caucasian,22
+25,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,25,,,,55,31,,12,,44,35,18,68,,,,,,,,,,,,,,,,,0.75,Dem,Male,White or Caucasian,30
+26,timing,fast,br,,,,,,,,,,,,,,,,,,,,,31,,26,23,,,76,,38,61,19,17,39,,,,,,,,,,,,,,,,,0.75,Dem,Female,White or Caucasian,34
+27,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,14,53,30,40,,,12,31,20,40,,,,0.5,Rep,Male,White or Caucasian,41
+28,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,22,18,,,34,,17,,28,24,32,14,68,,,,1,Dem,Female,White or Caucasian,27
+29,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7,30,,67,12,,20,49,8,5,,,,0.75,Ind,Female,Black or African American,53
+30,wording,,no_br,,,,,,,,,60,61,33,57,72,78,75,45,29,,60,,,,,,,,,,,,,,,,,,,,,,,,,,,,,45,59,0.75,Rep,Male,White or Caucasian,39
+31,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,64,6,,,47,36,18,3,23,31,25,,,,0.25,Ind,Female,Hispanic or Latino,30
+32,wording,,no_br,61,48,22,15,57,18,40,22,,,,,,,,,,25,,20,,,,,,,,,,,,,,,,,,,,,,,,,,,,15,35,1,Ind,Female,White or Caucasian,58
+33,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,,10,10,20,,,10,,17,6,15,15,,,,,,,,,,,,,,,,,1,Dem,Male,Asian or Pacific Islander,51
+34,wording,,br,,,,,,,,,61,50,20,51,20,3,50,10,35,,30,,,,,,,,,,,,,,,,,,,,,,,,,,,,50,30,40,0.75,Dem,Female,Black or African American,54
+35,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,10,,,34,,,26,35,12,39,29,41,,,,0.25,Rep,Female,White or Caucasian,41
+36,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,25,,,,70,70,60,,,80,40,35,40,,,,,,,,,,,,,,,,,1,Rep,Male,White or Caucasian,30
+37,wording,,br,15,5,5,15,10,40,10,5,,,,,,,,,35,,20,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,10,20,1,Rep,Female,White or Caucasian,54
+38,wording,,br,35,75,25,65,25,20,50,20,,,,,,,,,25,,20,,,,,,,,,,,,,,,,,,,,,,,,,,,,50,40,60,0.75,Dem,Male,White or Caucasian,27
+39,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6,,25,50,44,,39,19,57,10,33,,,,0.75,Rep,Male,Black or African American,19
+40,wording,,br,,,,,,,,,20,50,10,25,20,60,5,25,15,,30,,,,,,,,,,,,,,,,,,,,,,,,,,,,60,40,55,0.5,Ind,Female,White or Caucasian,37
+41,wording,,no_br,33,60,8,56,15,29,19,19,,,,,,,,,5,,,65,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,25,1,Dem,Male,White or Caucasian,27
+42,wording,,no_br,,,,,,,,,50,80,60,60,30,50,30,35,25,,,50,,,,,,,,,,,,,,,,,,,,,,,,,,,,10,85,1,Ind,Female,White or Caucasian,40
+43,wording,,br,,,,,,,,,58,92,4,67,35,43,52,10,40,,,61,,,,,,,,,,,,,,,,,,,,,,,,,,,31,3,71,1,Rep,Female,Other,37
+44,wording,,br,,,,,,,,,48,71,36,37,31,19,32,33,,9,,29,,,,,,,,,,,,,,,,,,,,,,,,,,,40,30,61,1,Ind,Male,White or Caucasian,32
+45,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,,39,,60,40,80,,18,23,7,10,20,,,,,,,,,,,,,,,,,0.75,Ind,Female,White or Caucasian,27
+46,wording,,no_br,,,,,,,,,25,80,13,40,30,20,10,15,,10,,30,,,,,,,,,,,,,,,,,,,,,,,,,,,,35,40,1,Dem,Female,White or Caucasian,23
+47,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,,50,62,71,,90,,81,70,18,28,81,,,,,,,,,,,,,,,,,0.5,Dem,Female,White or Caucasian,57
+48,wording,,no_br,,,,,,,,,31,42,20,32,32,51,11,10,30,,,30,,,,,,,,,,,,,,,,,,,,,,,,,,,,16,26,0.25,Rep,Female,White or Caucasian,34
+49,wording,,br,,,,,,,,,20,35,20,35,13,9,9,15,9,,,41,,,,,,,,,,,,,,,,,,,,,,,,,,,19,20,30,0.5,Dem,Female,White or Caucasian,57
+50,wording,,no_br,43,36,42,35,34,11,39,51,,,,,,,,,20,,19,,,,,,,,,,,,,,,,,,,,,,,,,,,,,25,40,1,Rep,Male,White or Caucasian,48
+51,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,,25,,41,27,30,,,40,24,35,60,,,,,,,,,,,,,,,,,0.5,Dem,Female,White or Caucasian,53
+52,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,,21,29,11,50,24,62,30,71,,,,0.75,Dem,Male,White or Caucasian,54
+53,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,30,75,,21,18,,,,30,40,35,20,,,,,,,,,,,,,,,,,0.75,Dem,Male,Asian or Pacific Islander,31
+54,wording,,no_br,40,40,5,55,15,40,10,10,,,,,,,,,15,,,55,,,,,,,,,,,,,,,,,,,,,,,,,,,,60,65,1,Dem,Male,White or Caucasian,27
+55,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,30,15,,30,,70,,25,30,20,18,70,,,,,,,,,,,,,,,,,1,Dem,Male,White or Caucasian,30
+56,wording,,br,,,,,,,,,8,35,5,32,35,25,10,20,,10,37,,,,,,,,,,,,,,,,,,,,,,,,,,,,25,15,45,1,Ind,Male,White or Caucasian,29
+57,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,,,,11,62,57,,70,35,42,6,49,,,,0.75,Dem,Male,Black or African American,30
+58,wording,,no_br,,,,,,,,,92,85,62,85,84,63,55,85,62,,,27,,,,,,,,,,,,,,,,,,,,,,,,,,,,11,71,0.5,Ind,Female,White or Caucasian,53
+59,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,12,,30,,,,40,5,,40,30,5,20,,,,,,,,,,,,,,,,,1,Dem,Male,White or Caucasian,53
+60,wording,,br,12,11,15,32,18,15,18,8,,,,,,,,,,13,,30,,,,,,,,,,,,,,,,,,,,,,,,,,,34,12,45,0.5,Rep,Female,White or Caucasian,48
+61,wording,,br,,,,,,,,,73,78,84,60,37,34,35,45,,22,28,,,,,,,,,,,,,,,,,,,,,,,,,,,,22,8,42,1,Dem,Female,White or Caucasian,26
+62,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,6,,20,35,,25,15,35,15,40,,,,1,Dem,Male,Hispanic or Latino,35
+63,wording,,br,15,15,5,30,10,30,70,10,,,,,,,,,,10,10,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,10,19,1,Rep,Male,White or Caucasian,50
+64,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,19,13,3,,21,,,30,25,10,19,65,,,,,,,,,,,,,,,,,1,Dem,Female,White or Caucasian,55
+65,wording,,no_br,,,,,,,,,38,42,50,25,25,25,19,41,35,,,65,,,,,,,,,,,,,,,,,,,,,,,,,,,,75,70,0.75,Rep,Male,White or Caucasian,53
+66,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,35,30,15,,,,12,25,30,10,40,25,,,,,,,,,,,,,,,,,1,Dem,Female,Asian or Pacific Islander,21
+67,wording,,no_br,20,75,5,50,15,20,10,9,,,,,,,,,10,,49,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,40,1,Dem,Male,White or Caucasian,48
+68,wording,,br,65,30,30,50,43,29,6,20,,,,,,,,,19,,,50,,,,,,,,,,,,,,,,,,,,,,,,,,,30,9,21,0.75,Dem,Female,White or Caucasian,41
+69,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,15,45,,15,,,,40,35,45,15,25,,,,0.75,Rep,Female,White or Caucasian,58
+70,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,12,20,,20,,35,,,40,20,60,25,33,,,,1,Dem,Male,Hispanic or Latino,30
+71,wording,,no_br,,,,,,,,,79,34,27,50,92,5,72,62,51,,,36,,,,,,,,,,,,,,,,,,,,,,,,,,,,63,38,0,Dem,Female,Black or African American,31
+72,wording,,no_br,,,,,,,,,50,20,50,50,20,5,30,5,,17,30,,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,50,1,Dem,Male,White or Caucasian,20
+73,wording,,br,,,,,,,,,9,60,10,31,30,15,10,10,,10,,10,,,,,,,,,,,,,,,,,,,,,,,,,,,29,20,40,0.5,Dem,Female,White or Caucasian,34
+74,wording,,no_br,,,,,,,,,54,73,8,49,46,25,22,27,,28,,71,,,,,,,,,,,,,,,,,,,,,,,,,,,,8,19,0.75,Rep,Female,White or Caucasian,44
+75,wording,,br,,,,,,,,,20,20,5,50,40,65,25,15,,5,60,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,5,15,1,Rep,Male,White or Caucasian,55
+76,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10,,15,61,,1,34,30,40,19,24,,,,1,Dem,Male,White or Caucasian,34
+77,wording,,no_br,75,75,30,25,30,75,50,80,,,,,,,,,20,,,50,,,,,,,,,,,,,,,,,,,,,,,,,,,,25,35,0.75,Ind,Female,White or Caucasian,23
+78,wording,,br,60,15,60,5,70,90,40,70,,,,,,,,,,10,60,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,20,20,0.75,Ind,Male,White or Caucasian,42
+79,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,15,21,34,,,,,30,61,41,65,10,30,,,,1,Dem,Male,Black or African American,43
+80,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,60,30,,,21,55,,,71,30,55,20,,,,,,,,,,,,,,,,,0.75,Dem,Female,Asian or Pacific Islander,21
+81,timing,fast,br,,,,,,,,,,,,,,,,,,,,,28,,72,28,,65,,,80,35,19,22,44,,,,,,,,,,,,,,,,,0.5,Dem,Male,White or Caucasian,33
+82,timing,fast,br,,,,,,,,,,,,,,,,,,,,,30,,,33,61,52,,,63,62,69,41,35,,,,,,,,,,,,,,,,,1,Dem,Male,Black or African American,20
+83,wording,,br,40,37,14,5,27,11,40,28,,,,,,,,,40,,,30,,,,,,,,,,,,,,,,,,,,,,,,,,,82,49,89,0.5,Ind,Female,White or Caucasian,27
+84,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,43,,36,54,,,10,20,21,13,12,61,,,,,,,,,,,,,,,,,1,Dem,Female,White or Caucasian,27
+85,wording,,no_br,30,15,6,12,50,3,10,5,,,,,,,,,,50,,60,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,30,0.75,Rep,Female,White or Caucasian,52
+86,wording,,br,60,60,20,65,25,25,20,20,,,,,,,,,,30,,50,,,,,,,,,,,,,,,,,,,,,,,,,,,35,20,45,1,Dem,Male,Asian or Pacific Islander,30
+87,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,29,,,40,,16,70,,31,10,40,20,50,,,,0.5,Rep,Female,White or Caucasian,59
+88,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,20,40,,19,,,30,,,30,15,25,20,,,,,,,,,,,,,,,,,0.75,Dem,Male,White or Caucasian,26
+89,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,71,13,31,,,29,,,,46,30,19,30,,,,,,,,,,,,,,,,,0.5,Dem,Male,White or Caucasian,26
+90,wording,,br,,,,,,,,,55,65,8,66,55,35,35,10,,50,68,,,,,,,,,,,,,,,,,,,,,,,,,,,,70,60,90,0.75,Dem,Female,White or Caucasian,56
+91,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,24,,15,,44,,20,,,79,80,9,38,,,,,,,,,,,,,,,,,1,Dem,Male,White or Caucasian,26
+92,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,62,,,11,25,,,44,41,14,25,30,24,,,,0.75,Dem,Female,Black or African American,26
+93,timing,fast,br,,,,,,,,,,,,,,,,,,,,,12,19,40,2,,,,,34,37,25,14,40,,,,,,,,,,,,,,,,,0.75,Rep,Male,White or Caucasian,35
+94,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,,60,8,,,50,21,,51,41,6,14,,,,,,,,,,,,,,,,,1,Dem,Male,White or Caucasian,21
+95,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,60,,,41,,,57,,,13,9,19,51,,,,,,,,,,,,,,,,,0.75,Rep,Female,White or Caucasian,57
+96,wording,,no_br,25,30,10,30,30,10,15,10,,,,,,,,,,15,,40,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,55,1,Dem,Male,Asian or Pacific Islander,29
+97,wording,,no_br,,,,,,,,,38,7,10,9,29,29,32,13,,31,,19,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,40,1,Ind,Male,Hispanic or Latino,46
+98,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,96,,62,,53,91,,,,78,41,35,64,,,,,,,,,,,,,,,,,0.5,Rep,Female,White or Caucasian,56
+99,wording,,br,,,,,,,,,50,75,7,50,40,39,25,10,30,,,65,,,,,,,,,,,,,,,,,,,,,,,,,,,35,20,50,0.75,Rep,Female,White or Caucasian,48
+100,wording,,no_br,,,,,,,,,50,70,25,65,40,50,50,25,40,,,60,,,,,,,,,,,,,,,,,,,,,,,,,,,,50,70,1,Dem,Male,White or Caucasian,29
+101,timing,fast,br,,,,,,,,,,,,,,,,,,,,,82,,,,,74,66,20,31,38,15,46,63,,,,,,,,,,,,,,,,,0.75,Dem,Female,Asian or Pacific Islander,22
+102,wording,,br,,,,,,,,,64,25,84,43,58,21,42,9,30,,36,,,,,,,,,,,,,,,,,,,,,,,,,,,,38,53,59,0.25,Dem,Male,Hispanic or Latino,30
+103,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,35,,,,80,60,40,,40,65,40,60,,,,,,,,,,,,,,,,,0.75,Rep,Female,White or Caucasian,34
+104,wording,,br,,,,,,,,,36,51,30,31,38,20,36,29,,25,,40,,,,,,,,,,,,,,,,,,,,,,,,,,,34,25,60,0.75,Rep,Female,White or Caucasian,60
+105,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,37,23,16,50,,,,32,31,43,11,40,,,,0.75,Dem,Female,White or Caucasian,25
+106,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,,35,,25,15,30,,,70,50,30,40,,,,,,,,,,,,,,,,,0.5,Ind,Male,Asian or Pacific Islander,21
+107,wording,,no_br,,,,,,,,,47,43,6,70,14,22,22,20,9,,,44,,,,,,,,,,,,,,,,,,,,,,,,,,,,21,52,1,Ind,Male,Asian or Pacific Islander,31
+108,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5,40,,10,100,60,40,75,25,35,,,,1,Rep,Male,White or Caucasian,36
+109,wording,,br,,,,,,,,,81,80,61,36,30,39,11,10,28,,,51,,,,,,,,,,,,,,,,,,,,,,,,,,,42,28,52,1,Dem,Female,White or Caucasian,32
+110,wording,,no_br,,,,,,,,,30,30,10,30,20,20,20,15,,5,15,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,60,0.75,Dem,Female,White or Caucasian,61
+111,wording,,no_br,70,40,5,80,31,10,40,15,,,,,,,,,,8,71,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,70,0.75,Dem,Male,White or Caucasian,32
+112,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,36,26,30,80,,,,36,1,25,34,7,,,,0.75,Dem,Male,White or Caucasian,36
+113,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,20,,,0,,60,81,0,75,0,0,,,,0.5,Rep,Female,White or Caucasian,55
+114,wording,,no_br,,,,,,,,,35,30,45,50,30,10,20,20,35,,,50,,,,,,,,,,,,,,,,,,,,,,,,,,,,45,30,1,Dem,Female,White or Caucasian,51
+115,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,40,50,19,,,,,30,,34,25,24,30,,,,,,,,,,,,,,,,,0.75,Rep,Female,White or Caucasian,46
+116,wording,,no_br,50,60,60,40,75,15,20,40,,,,,,,,,60,,60,,,,,,,,,,,,,,,,,,,,,,,,,,,,,15,40,0.5,Ind,Female,White or Caucasian,28
+117,wording,,br,,,,,,,,,29,22,26,22,8,10,20,5,24,,,40,,,,,,,,,,,,,,,,,,,,,,,,,,,30,20,40,1,Dem,Female,White or Caucasian,25
+118,wording,,br,,,,,,,,,75,70,75,72,69,50,51,65,39,,36,,,,,,,,,,,,,,,,,,,,,,,,,,,,63,66,64,0.75,Dem,Female,White or Caucasian,22
+119,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,62,,,34,63,42,,7,24,23,35,,,,1,Dem,Female,White or Caucasian,22
+120,wording,,br,57,69,35,48,66,26,86,54,,,,,,,,,,13,51,,,,,,,,,,,,,,,,,,,,,,,,,,,,60,27,89,0.75,Ind,Female,White or Caucasian,31
+121,wording,,no_br,,,,,,,,,33,35,15,33,50,25,35,15,,15,25,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,35,1,Ind,Male,White or Caucasian,29
+122,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,78,24,65,20,,,,,35,20,60,8,45,,,,0.75,Dem,Male,White or Caucasian,39
+123,wording,,no_br,,,,,,,,,50,42,85,65,55,55,74,64,,61,50,,,,,,,,,,,,,,,,,,,,,,,,,,,,,73,83,1,Dem,Male,Asian or Pacific Islander,18
+124,timing,fast,br,,,,,,,,,,,,,,,,,,,,,39,34,78,,72,,,,21,54,3,22,35,,,,,,,,,,,,,,,,,0.5,Dem,Female,White or Caucasian,29
+125,wording,,no_br,,,,,,,,,16,50,2,25,10,30,15,5,,5,25,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7,7,0.75,Dem,Male,White or Caucasian,31
+126,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,25,,,4,,40,,10,,20,60,10,60,,,,0.5,Dem,Female,White or Caucasian,42
+127,wording,,br,35,50,3,65,35,20,61,11,,,,,,,,,44,,,22,,,,,,,,,,,,,,,,,,,,,,,,,,,28,21,48,0.75,Dem,Male,Asian or Pacific Islander,43
+128,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10,,,50,,25,10,,10,50,20,30,,,,0.75,Rep,Female,White or Caucasian,49
+129,timing,fast,br,,,,,,,,,,,,,,,,,,,,,30,65,,30,,60,,,35,32,20,15,70,,,,,,,,,,,,,,,,,0.5,Rep,Male,Hispanic or Latino,27
+130,wording,,no_br,64,70,93,27,9,13,67,1,,,,,,,,,,3,57,,,,,,,,,,,,,,,,,,,,,,,,,,,,,28,47,0.5,Ind,Female,White or Caucasian,27
+131,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,18,,100,41,,59,,,,41,2,81,50,,,,,,,,,,,,,,,,,0.5,Ind,Female,Asian or Pacific Islander,28
+132,wording,,br,35,30,28,50,20,7,9,2,,,,,,,,,,3,,30,,,,,,,,,,,,,,,,,,,,,,,,,,,16,6,10,1,Dem,Male,White or Caucasian,29
+133,wording,,br,,,,,,,,,38,36,20,82,37,15,18,51,25,,,57,,,,,,,,,,,,,,,,,,,,,,,,,,,29,4,46,1,Dem,Female,White or Caucasian,35
+134,wording,,br,12,20,13,55,35,25,18,10,,,,,,,,,12,,58,,,,,,,,,,,,,,,,,,,,,,,,,,,,25,20,30,0.75,Rep,Male,Hispanic or Latino,60
+135,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,29,,,61,,,76,40,17,22,12,21,,,,0.75,Rep,Female,White or Caucasian,30
+136,wording,,br,67,65,45,40,50,55,19,25,,,,,,,,,,8,55,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,12,20,1,Ind,Female,White or Caucasian,25
+137,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,15,,,38,60,,34,,40,19,9,30,,,,,,,,,,,,,,,,,1,Dem,Female,White or Caucasian,36
+138,wording,,br,,,,,,,,,20,10,2,30,20,20,15,10,,10,25,,,,,,,,,,,,,,,,,,,,,,,,,,,,25,20,35,1,Dem,Male,Asian or Pacific Islander,30
+139,wording,,no_br,,,,,,,,,45,60,75,80,40,40,75,55,,40,,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,15,25,0.75,Dem,Female,Hispanic or Latino,21
+140,wording,,br,,,,,,,,,30,20,10,15,5,10,5,3,10,,,20,,,,,,,,,,,,,,,,,,,,,,,,,,,15,10,20,0.75,Dem,Male,Hispanic or Latino,47
+141,wording,,no_br,9,71,6,65,13,23,5,4,,,,,,,,,,20,,20,,,,,,,,,,,,,,,,,,,,,,,,,,,,21,30,1,Rep,Male,White or Caucasian,33
+142,wording,,no_br,35,84,26,20,30,20,25,30,,,,,,,,,25,,33,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6,45,1,Rep,Female,White or Caucasian,37
+143,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,71,28,,,68,84,,,,70,92,48,30,,,,0.5,Dem,Male,White or Caucasian,55
+144,wording,,br,64,8,46,52,40,36,29,19,,,,,,,,,,41,59,,,,,,,,,,,,,,,,,,,,,,,,,,,,36,30,38,0.75,Dem,Female,White or Caucasian,27
+145,wording,,br,,,,,,,,,50,15,19,35,20,30,20,10,19,,29,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,40,40,1,Rep,Female,White or Caucasian,57
+146,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,39,29,42,,25,,30,18,45,14,53,,,,0.75,Rep,Female,White or Caucasian,45
+147,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,34,,5,,40,24,,,9,25,13,30,,,,1,Dem,Female,White or Caucasian,27
+148,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,62,,53,52,,,,60,,61,40,41,64,,,,,,,,,,,,,,,,,0.75,Rep,Female,White or Caucasian,39
+149,wording,,br,75,40,10,12,10,5,15,10,,,,,,,,,18,,20,,,,,,,,,,,,,,,,,,,,,,,,,,,,16,8,8,1,Ind,Male,Hispanic or Latino,43
+150,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,18,,,51,56,1,19,11,28,11,45,,,,1,Dem,Male,White or Caucasian,29
+151,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,26,26,,,56,46,,,67,48,44,32,,,,,,,,,,,,,,,,,0.75,Rep,Female,White or Caucasian,35
+152,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,24,31,,72,,,35,,46,25,48,27,,,,,,,,,,,,,,,,,0.25,Dem,Male,White or Caucasian,28
+153,wording,,br,,,,,,,,,68,70,40,25,33,20,5,25,25,,,40,,,,,,,,,,,,,,,,,,,,,,,,,,,22,11,39,0.5,Dem,Female,White or Caucasian,30
+154,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,,57,,29,,32,41,,22,27,19,,,,,,,,,,,,,,,,,,0,Dem,Male,Black or African American,33
+155,wording,,no_br,,,,,,,,,25,69,31,64,41,8,51,37,35,,,41,,,,,,,,,,,,,,,,,,,,,,,,,,,,71,71,0.75,Rep,Male,White or Caucasian,23
+156,wording,,br,40,60,20,35,40,30,45,10,,,,,,,,,,10,,75,,,,,,,,,,,,,,,,,,,,,,,,,,,35,25,45,1,Dem,Male,White or Caucasian,58
+157,wording,,br,,,,,,,,,39,10,9,32,31,13,31,16,30,,60,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,32,62,1,Rep,Male,White or Caucasian,66
+158,wording,,no_br,,,,,,,,,70,70,59,79,37,43,42,51,35,,,16,,,,,,,,,,,,,,,,,,,,,,,,,,,,18,40,1,Rep,Male,Asian or Pacific Islander,31
+159,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,,40,22,61,,,,22,14,28,28,34,,,,0.75,Ind,Male,White or Caucasian,45
+160,wording,,br,,,,,,,,,10,25,1,22,34,4,19,24,23,,16,,,,,,,,,,,,,,,,,,,,,,,,,,,,74,26,32,0.75,Rep,Male,White or Caucasian,60
+161,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,24,15,,,,45,61,,,34,64,27,25,,,,0.75,Dem,Male,Hispanic or Latino,46
+162,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,17,,50,40,60,,20,10,10,13,70,,,,0.75,Ind,Male,White or Caucasian,36
+163,wording,,br,,,,,,,,,61,50,83,42,24,40,30,21,,10,40,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,17,24,1,Dem,Male,White or Caucasian,24
+164,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,44,49,,36,,,,40,62,51,68,50,81,,,,0.75,Rep,Female,White or Caucasian,23
+165,wording,,br,78,95,4,86,47,68,14,45,,,,,,,,,27,,,84,,,,,,,,,,,,,,,,,,,,,,,,,,,30,11,61,0.25,Ind,Male,White or Caucasian,24
+166,wording,,no_br,,,,,,,,,15,60,25,40,6,25,10,5,35,,20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,35,1,Dem,Male,Asian or Pacific Islander,34
+167,wording,,no_br,,,,,,,,,56,53,7,51,9,9,15,9,9,,,9,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,29,0.5,Dem,Male,White or Caucasian,34
+168,wording,,no_br,,,,,,,,,43,60,100,81,97,24,64,44,,30,80,,,,,,,,,,,,,,,,,,,,,,,,,,,,,54,82,0.75,Dem,Female,Black or African American,44
+169,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,71,,,53,36,,71,55,46,24,45,55,,,,,,,,,,,,,,,,,0.75,Dem,Female,White or Caucasian,38
+170,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,,43,33,,95,73,,,64,44,46,25,,,,,,,,,,,,,,,,,0.75,Dem,Female,Black or African American,26
+171,wording,,no_br,,,,,,,,,30,20,20,50,50,19,30,25,35,,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,,34,55,0.5,Rep,Female,White or Caucasian,37
+172,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,38,6,,,,,31,19,59,15,46,18,27,,,,0.25,Dem,Female,White or Caucasian,50
+173,wording,,br,,,,,,,,,60,20,10,20,30,14,30,10,40,,50,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,20,35,1,Rep,Female,White or Caucasian,35
+174,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,33,,,,,39,71,24,,45,9,14,35,,,,,,,,,,,,,,,,,0.5,Dem,Female,White or Caucasian,26
+175,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,,,14,50,,,10,,30,50,15,40,,,,0.75,Ind,Female,White or Caucasian,28
+176,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,,25,,44,,37,8,23,30,18,17,19,,,,,,,,,,,,,,,,,1,Rep,Male,Asian or Pacific Islander,30
+177,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,13,12,7,,72,,,,7,22,27,47,,,,0.75,Dem,Male,White or Caucasian,56
+178,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,,15,15,20,,,5,,55,25,19,35,,,,,,,,,,,,,,,,,1,Dem,Male,White or Caucasian,61
+179,wording,,no_br,,,,,,,,,35,70,10,60,20,40,30,10,,9,,15,,,,,,,,,,,,,,,,,,,,,,,,,,,,45,65,1,Dem,Male,White or Caucasian,36
+180,wording,,br,83,74,82,9,30,10,9,26,,,,,,,,,,35,68,,,,,,,,,,,,,,,,,,,,,,,,,,,,39,20,60,0.5,Dem,Female,Asian or Pacific Islander,30
+181,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,,58,7,,,65,,,43,37,13,17,,,,0.75,Ind,Male,White or Caucasian,34
+182,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,50,,60,,40,51,,19,19,19,,18,,,,,,,,,,,,,,,,,0.5,Ind,Female,White or Caucasian,41
+183,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,70,,85,,,,75,66,,8,33,18,35,,,,0.5,Ind,Female,Black or African American,24
+184,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,19,40,20,61,,,,47,25,22,30,14,,,,,,,,,,,,,,,,,0.75,Dem,Female,White or Caucasian,54
+185,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,91,53,,,52,,70,,,81,61,61,73,,,,,,,,,,,,,,,,,0.5,Rep,Female,White or Caucasian,41
+186,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,10,,,,60,40,30,,25,5,15,12,,,,,,,,,,,,,,,,,1,Ind,Male,White or Caucasian,38
+187,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,52,,,10,,38,,51,,66,39,10,62,,,,,,,,,,,,,,,,,0.75,Dem,Female,White or Caucasian,39
+188,timing,fast,br,,,,,,,,,,,,,,,,,,,,,34,,19,29,,,,29,41,53,40,51,44,,,,,,,,,,,,,,,,,1,Dem,Female,White or Caucasian,23
+189,wording,,no_br,,,,,,,,,18,22,25,31,37,26,45,32,37,,,30,,,,,,,,,,,,,,,,,,,,,,,,,,,,19,38,0.75,Dem,Female,White or Caucasian,27
+190,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,35,18,,,65,,52,,,15,20,26,40,,,,0.75,Dem,Female,White or Caucasian,33
+191,wording,,no_br,54,36,67,63,44,19,15,11,,,,,,,,,,23,,45,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,30,1,Dem,Female,White or Caucasian,21
+192,wording,,no_br,72,41,19,49,74,42,50,44,,,,,,,,,29,,,74,,,,,,,,,,,,,,,,,,,,,,,,,,,,37,61,0.75,Dem,Female,White or Caucasian,26
+193,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,25,70,,,,15,,5,,35,3,30,40,,,,,,,,,,,,,,,,,1,Rep,Male,White or Caucasian,34
+194,wording,,no_br,51,51,51,52,49,49,50,49,,,,,,,,,,51,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,100,100,0,Rep,Female,White or Caucasian,23
+195,wording,,br,,,,,,,,,28,40,3,18,15,25,20,3,,8,,32,,,,,,,,,,,,,,,,,,,,,,,,,,,23,18,27,1,Rep,Male,White or Caucasian,40
+196,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,42,26,0,,,65,,0,0,0,10,0,,,,0.75,Dem,Female,White or Caucasian,32
+197,wording,,br,,,,,,,,,50,50,50,50,50,50,50,50,60,,,70,,,,,,,,,,,,,,,,,,,,,,,,,,,40,20,81,0.75,Dem,Female,White or Caucasian,32
+198,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,,,70,40,,35,65,55,80,35,50,,,,0.75,Dem,Female,White or Caucasian,28
+199,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,15,,10,,40,,20,30,13,31,20,10,,,,0.75,Dem,Female,Black or African American,43
+200,wording,,br,81,90,50,70,40,50,20,50,,,,,,,,,,40,,30,,,,,,,,,,,,,,,,,,,,,,,,,,,70,30,40,0.5,Dem,Female,White or Caucasian,28
+201,wording,,no_br,,,,,,,,,70,79,48,50,90,86,87,42,29,,,50,,,,,,,,,,,,,,,,,,,,,,,,,,,,65,80,0.5,Rep,Female,White or Caucasian,28
+202,wording,,br,,,,,,,,,19,41,2,49,14,27,10,15,21,,24,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,30,45,0.75,Dem,Male,Black or African American,29
+203,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,43,,20,,,,35,6,25,16,9,13,66,,,,0.75,Ind,Female,White or Caucasian,26
+204,wording,,br,61,82,45,54,39,51,19,31,,,,,,,,,37,,,37,,,,,,,,,,,,,,,,,,,,,,,,,,,58,46,57,0.75,Dem,Female,Black or African American,22
+205,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,26,,16,,60,70,,,39,17,19,64,,,,,,,,,,,,,,,,,0.75,Dem,Female,White or Caucasian,37
+206,wording,,no_br,20,30,76,80,70,20,60,34,,,,,,,,,30,,25,,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,60,1,Rep,Female,White or Caucasian,47
+207,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,43,,,,,61,40,20,29,91,30,9,30,,,,0.75,Ind,Male,Hispanic or Latino,41
+208,timing,fast,br,,,,,,,,,,,,,,,,,,,,,18,2,,9,,,14,,40,51,15,7,20,,,,,,,,,,,,,,,,,0.75,Dem,Female,White or Caucasian,47
+209,wording,,br,81,89,59,77,24,13,80,26,,,,,,,,,16,,,18,,,,,,,,,,,,,,,,,,,,,,,,,,,30,30,71,1,Dem,Male,Black or African American,20
+210,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,60,80,,,70,,,,40,25,5,35,,,,0.75,Dem,Female,White or Caucasian,32
+211,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,12,30,,,25,40,,35,18,17,30,30,,,,0.25,Ind,Male,White or Caucasian,27
+212,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,15,,10,15,40,,,,,20,35,12,25,,,,0.75,Dem,Female,White or Caucasian,26
+213,wording,,br,,,,,,,,,75,90,70,50,100,50,90,70,,10,25,,,,,,,,,,,,,,,,,,,,,,,,,,,,75,10,90,0.5,Ind,Female,Black or African American,37
+214,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,50,29,,25,,20,,,17,13,14,42,,,,,,,,,,,,,,,,,1,Rep,Male,White or Caucasian,38
+215,wording,,no_br,13,47,73,27,53,39,22,20,,,,,,,,,,32,,40,,,,,,,,,,,,,,,,,,,,,,,,,,,,58,61,0.75,Dem,Male,Asian or Pacific Islander,32
+216,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,70,15,,70,,,5,30,15,50,5,45,,,,1,Dem,Male,White or Caucasian,27
+217,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,,30,12,25,,58,,7,5,2,10,30,,,,,,,,,,,,,,,,,0.5,Dem,Female,Black or African American,23
+218,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,,,24,25,12,32,,32,42,16,32,36,,,,,,,,,,,,,,,,,1,Dem,Male,White or Caucasian,36
+219,wording,,br,,,,,,,,,87,87,100,28,44,9,23,33,,9,,50,,,,,,,,,,,,,,,,,,,,,,,,,,,45,11,45,0.5,Rep,Female,White or Caucasian,27
+220,wording,,no_br,,,,,,,,,60,40,20,60,70,70,80,90,20,,60,,,,,,,,,,,,,,,,,,,,,,,,,,,,,90,70,0.75,Dem,Male,Asian or Pacific Islander,33
+221,wording,,no_br,,,,,,,,,41,74,51,72,49,20,49,35,42,,,68,,,,,,,,,,,,,,,,,,,,,,,,,,,,60,51,0.75,Ind,Female,Black or African American,34
+222,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,30,,,20,55,,,10,20,40,20,,,,1,Dem,Male,White or Caucasian,52
+223,wording,,br,,,,,,,,,60,50,30,40,30,10,20,15,,40,50,,,,,,,,,,,,,,,,,,,,,,,,,,,,60,30,60,0.5,Dem,Male,White or Caucasian,51
+224,wording,,no_br,,,,,,,,,53,75,55,50,18,52,40,12,13,,,68,,,,,,,,,,,,,,,,,,,,,,,,,,,,50,40,1,Ind,Female,White or Caucasian,26
+225,wording,,br,62,61,40,41,15,21,13,10,,,,,,,,,21,,60,,,,,,,,,,,,,,,,,,,,,,,,,,,,61,30,71,0.5,Dem,Female,Asian or Pacific Islander,22
+226,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,16,10,30,7,,,,,,27,17,11,20,,,,,,,,,,,,,,,,,0.75,Dem,Male,White or Caucasian,22
+227,wording,,br,53,75,43,73,54,59,57,49,,,,,,,,,,21,59,,,,,,,,,,,,,,,,,,,,,,,,,,,,53,66,55,1,Dem,Male,White or Caucasian,29
+228,timing,fast,br,,,,,,,,,,,,,,,,,,,,,54,40,,,77,,58,,20,18,0,52,76,,,,,,,,,,,,,,,,,0.5,Rep,Female,Asian or Pacific Islander,49
+229,wording,,no_br,,,,,,,,,47,31,58,19,18,18,49,10,,20,,36,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,10,1,Dem,Male,White or Caucasian,25
+230,wording,,no_br,63,33,50,16,70,14,14,32,,,,,,,,,,6,65,,,,,,,,,,,,,,,,,,,,,,,,,,,,,24,68,0.5,Rep,Female,White or Caucasian,47
+231,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,18,18,,10,,30,,,,30,26,21,20,,,,,,,,,,,,,,,,,1,Dem,Female,White or Caucasian,26
+232,wording,,no_br,20,19,20,36,30,18,19,13,,,,,,,,,20,,,30,,,,,,,,,,,,,,,,,,,,,,,,,,,,19,20,1,Dem,Male,White or Caucasian,37
+233,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,31,8,,,9,,1,53,51,71,20,66,,,,0.75,Ind,Female,White or Caucasian,23
+234,wording,,no_br,,,,,,,,,30,40,80,85,30,10,80,40,10,,,50,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,70,0.5,Dem,Female,White or Caucasian,69
+235,wording,,br,,,,,,,,,55,76,15,80,27,35,20,10,,15,50,,,,,,,,,,,,,,,,,,,,,,,,,,,,60,50,70,1,Dem,Male,White or Caucasian,40
+236,wording,,br,,,,,,,,,48,31,59,60,74,31,28,34,52,,,32,,,,,,,,,,,,,,,,,,,,,,,,,,,27,31,29,0.75,Rep,Male,White or Caucasian,32
+237,wording,,no_br,28,36,11,39,29,41,46,15,,,,,,,,,,59,,61,,,,,,,,,,,,,,,,,,,,,,,,,,,,37,29,1,Dem,Male,Hispanic or Latino,27
+238,timing,fast,br,,,,,,,,,,,,,,,,,,,,,20,,,15,,71,55,,17,45,17,6,23,,,,,,,,,,,,,,,,,1,Ind,Female,White or Caucasian,30
+239,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,25,,30,,90,,55,,25,75,35,65,,,,0.75,Rep,Female,White or Caucasian,45
+240,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,24,,4,20,,,,21,,20,66,14,19,,,,0.75,Dem,Female,White or Caucasian,32
+241,timing,fast,br,,,,,,,,,,,,,,,,,,,,,11,,,15,16,,13,,16,17,15,15,18,,,,,,,,,,,,,,,,,0.75,Dem,Female,White or Caucasian,43
+242,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,19,40,,,19,33,,70,60,40,32,50,,,,,,,,,,,,,,,,,0.5,Dem,Female,White or Caucasian,67
+243,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,9,15,,,,39,4,,35,12,11,40,,,,,,,,,,,,,,,,,1,Dem,Male,Asian or Pacific Islander,27
+244,wording,,br,41,69,7,61,42,25,14,29,,,,,,,,,,11,62,,,,,,,,,,,,,,,,,,,,,,,,,,,,52,30,68,0.75,Ind,Female,White or Caucasian,50
+245,wording,,br,,,,,,,,,66,63,62,67,93,40,90,97,62,,80,,,,,,,,,,,,,,,,,,,,,,,,,,,,51,59,56,0.25,Dem,Female,Black or African American,27
+246,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,82,,35,15,64,,,,47,31,45,15,46,,,,0.5,Dem,Male,White or Caucasian,34
+247,wording,,br,,,,,,,,,50,62,74,28,49,30,62,30,30,,40,,,,,,,,,,,,,,,,,,,,,,,,,,,,51,30,71,0.25,Ind,Female,White or Caucasian,27
+248,wording,,no_br,,,,,,,,,70,30,50,50,70,30,20,60,10,,,30,,,,,,,,,,,,,,,,,,,,,,,,,,,,15,10,1,Dem,Female,Black or African American,50
+249,wording,,no_br,,,,,,,,,10,30,70,4,40,30,15,50,,21,,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,9,30,0.75,Dem,Female,White or Caucasian,28
+250,wording,,br,,,,,,,,,40,35,50,60,45,30,40,25,15,,60,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,10,40,0.5,Dem,Female,White or Caucasian,32
+251,wording,,br,35,20,20,20,70,20,70,30,,,,,,,,,,10,,50,,,,,,,,,,,,,,,,,,,,,,,,,,,50,20,75,1,Rep,Female,White or Caucasian,67
+252,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,25,,,45,,40,40,20,20,10,30,,,,0.5,Rep,Female,White or Caucasian,47
+253,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,19,,9,,,56,,2,,31,10,2,24,,,,,,,,,,,,,,,,,1,Dem,Male,Hispanic or Latino,36
+254,wording,,no_br,,,,,,,,,51,5,20,32,74,3,61,33,,29,50,,,,,,,,,,,,,,,,,,,,,,,,,,,,,18,31,0.25,Dem,Female,Black or African American,30
+255,wording,,br,,,,,,,,,50,60,70,60,90,10,60,20,,50,,70,,,,,,,,,,,,,,,,,,,,,,,,,,,60,20,40,0.25,,Female,Black or African American,43
+256,wording,,no_br,,,,,,,,,55,31,21,51,21,4,17,9,,7,21,,,,,,,,,,,,,,,,,,,,,,,,,,,,,14,30,1,Dem,Female,Black or African American,32
+257,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,61,,,,50,62,,41,40,40,39,61,,,,,,,,,,,,,,,,,0.75,Dem,Female,White or Caucasian,54
+258,wording,,no_br,27,16,15,35,21,30,15,2,,,,,,,,,20,,,29,,,,,,,,,,,,,,,,,,,,,,,,,,,,12,28,0.75,Dem,Male,White or Caucasian,31
+259,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,,0,20,41,,73,,70,71,70,33,20,,,,,,,,,,,,,,,,,0.5,Dem,Female,White or Caucasian,32
+260,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,,35,15,62,64,,,,38,18,33,28,,,,,,,,,,,,,,,,,0.5,Dem,Female,White or Caucasian,38
+261,wording,,br,32,31,9,33,98,62,44,55,,,,,,,,,31,,,17,,,,,,,,,,,,,,,,,,,,,,,,,,,20,21,31,0.75,Rep,Male,White or Caucasian,32
+262,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,,41,,42,57,,,,59,58,60,40,,,,0.75,Dem,Male,White or Caucasian,30
+263,timing,fast,br,,,,,,,,,,,,,,,,,,,,,51,,,88,85,93,,,68,55,35,49,55,,,,,,,,,,,,,,,,,0.25,Dem,Male,Black or African American,22
+264,timing,fast,br,,,,,,,,,,,,,,,,,,,,,35,,,10,32,50,,,20,26,15,13,59,,,,,,,,,,,,,,,,,1,Ind,Male,White or Caucasian,37
+265,wording,,br,,,,,,,,,88,56,75,63,9,35,27,3,,28,61,,,,,,,,,,,,,,,,,,,,,,,,,,,,16,12,38,0.75,Dem,Male,White or Caucasian,24
+266,wording,,br,,,,,,,,,32,47,39,36,40,26,35,25,,19,30,,,,,,,,,,,,,,,,,,,,,,,,,,,,39,25,36,1,Dem,Female,White or Caucasian,30
+267,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,14,19,,26,40,,,,61,72,10,65,,,,,,,,,,,,,,,,,1,Ind,Male,White or Caucasian,33
+268,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,40,25,20,,,,35,,,45,30,45,60,,,,,,,,,,,,,,,,,1,Dem,Female,White or Caucasian,63
+269,wording,,no_br,,,,,,,,,58,54,5,71,48,38,57,29,,15,43,,,,,,,,,,,,,,,,,,,,,,,,,,,,,18,24,1,Dem,Female,White or Caucasian,19
+270,wording,,br,71,85,75,73,60,24,42,24,,,,,,,,,,16,72,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,16,0,1,Dem,Male,White or Caucasian,43
+271,timing,fast,br,,,,,,,,,,,,,,,,,,,,,62,,,11,,,73,38,56,56,46,9,30,,,,,,,,,,,,,,,,,0.75,Dem,Female,White or Caucasian,29
+272,timing,fast,br,,,,,,,,,,,,,,,,,,,,,20,10,46,,,,,15,31,42,16,6,16,,,,,,,,,,,,,,,,,0.75,Dem,Female,White or Caucasian,20
+273,wording,,br,60,30,10,10,25,39,60,7,,,,,,,,,3,,,13,,,,,,,,,,,,,,,,,,,,,,,,,,,25,10,30,1,Rep,Male,White or Caucasian,40
+274,wording,,no_br,,,,,,,,,10,10,10,10,20,30,20,20,,10,60,,,,,,,,,,,,,,,,,,,,,,,,,,,,,29,60,0.75,Rep,Female,White or Caucasian,50
+275,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,26,13,40,,,63,30,19,40,35,50,,,,0.75,Dem,Male,Hispanic or Latino,23
+276,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,28,,41,30,,,62,,20,45,45,61,,,,0.75,Dem,Female,White or Caucasian,68
+277,wording,,no_br,,,,,,,,,50,90,70,65,40,25,70,35,35,,,25,,,,,,,,,,,,,,,,,,,,,,,,,,,,50,90,0.75,Rep,Female,White or Caucasian,25
+278,wording,,no_br,,,,,,,,,57,75,76,58,52,25,47,29,24,,58,,,,,,,,,,,,,,,,,,,,,,,,,,,,,33,42,0.75,Dem,Female,White or Caucasian,19
+279,wording,,br,50,20,50,10,45,31,50,15,,,,,,,,,60,,,50,,,,,,,,,,,,,,,,,,,,,,,,,,,60,40,69,0.75,Dem,Male,Asian or Pacific Islander,26
+280,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,45,,66,32,,91,,,58,45,72,47,81,,,,0.5,Dem,Female,White or Caucasian,55
+281,wording,,br,,,,,,,,,0,0,0,50,0,24,30,21,24,,,32,,,,,,,,,,,,,,,,,,,,,,,,,,,20,17,39,1,Rep,Male,White or Caucasian,24
+282,wording,,br,,,,,,,,,51,24,50,49,52,50,29,51,,40,15,,,,,,,,,,,,,,,,,,,,,,,,,,,,49,50,50,0.75,Rep,Female,White or Caucasian,32
+283,wording,,no_br,,,,,,,,,62,63,21,39,39,84,40,10,18,,73,,,,,,,,,,,,,,,,,,,,,,,,,,,,,3,10,1,Rep,Male,White or Caucasian,31
+284,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,,25,20,,,40,,25,15,25,15,30,,,,0.75,Rep,Female,White or Caucasian,45
+285,wording,,no_br,41,40,31,33,31,50,59,33,,,,,,,,,62,,,40,,,,,,,,,,,,,,,,,,,,,,,,,,,,29,72,0.75,Rep,Female,White or Caucasian,41
+286,wording,,no_br,,,,,,,,,18,15,11,39,23,15,12,13,,18,46,,,,,,,,,,,,,,,,,,,,,,,,,,,,,57,69,0.75,Ind,Male,White or Caucasian,50
+287,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,63,,67,,22,39,,,50,28,31,56,,,,,,,,,,,,,,,,,1,Dem,Female,Black or African American,19
+288,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,41,61,,,,,20,50,,30,10,30,31,,,,,,,,,,,,,,,,,0.75,Rep,Female,White or Caucasian,22
+289,wording,,no_br,70,80,40,30,15,30,10,5,,,,,,,,,5,,,10,,,,,,,,,,,,,,,,,,,,,,,,,,,,5,10,1,Dem,Male,Hispanic or Latino,27
+290,timing,fast,br,,,,,,,,,,,,,,,,,,,,,50,,,20,40,,30,,50,60,15,25,60,,,,,,,,,,,,,,,,,0.75,Rep,Female,White or Caucasian,54
+291,timing,fast,br,,,,,,,,,,,,,,,,,,,,,16,10,19,,,,,25,37,54,10,6,67,,,,,,,,,,,,,,,,,0.5,Dem,Female,White or Caucasian,44
+292,timing,fast,br,,,,,,,,,,,,,,,,,,,,,17,,12,,,,29,14,37,51,28,15,29,,,,,,,,,,,,,,,,,0.75,Rep,Female,White or Caucasian,26
+293,wording,,no_br,,,,,,,,,15,30,5,30,15,10,15,5,15,,15,,,,,,,,,,,,,,,,,,,,,,,,,,,,,25,30,1,Rep,Male,White or Caucasian,28
+294,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,,10,,60,,40,,70,20,60,30,60,,,,0.25,Rep,Female,White or Caucasian,34
+295,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,,50,,,,85,30,,10,72,40,20,,,,0.75,Ind,Female,White or Caucasian,27
+296,wording,,no_br,,,,,,,,,82,82,20,81,19,93,81,94,29,,,10,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,70,0.5,Rep,Male,White or Caucasian,30
+297,wording,,no_br,,,,,,,,,65,80,40,65,60,73,22,83,40,,,40,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,50,0.75,Ind,Female,White or Caucasian,27
+298,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,45,31,34,30,,,,,65,68,67,21,72,,,,0.75,Dem,Male,White or Caucasian,26
+299,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,46,,,40,,50,,28,49,41,41,46,45,,,,0.75,Ind,Male,Hispanic or Latino,29
+300,wording,,br,78,96,86,51,2,39,44,2,,,,,,,,,,65,,70,,,,,,,,,,,,,,,,,,,,,,,,,,,68,70,76,0,Rep,Male,White or Caucasian,32
+301,timing,fast,br,,,,,,,,,,,,,,,,,,,,,22,41,,30,,,,69,49,62,21,29,50,,,,,,,,,,,,,,,,,0.75,Dem,Female,White or Caucasian,44
+302,wording,,no_br,53,40,40,60,30,20,20,30,,,,,,,,,,5,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,30,1,Ind,Male,White or Caucasian,31
+303,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,82,60,40,47,,,,60,31,73,31,61,,,,0.25,Rep,Female,White or Caucasian,54
+304,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,30,14,,51,,71,,,21,9,9,72,,,,,,,,,,,,,,,,,1,Dem,Male,White or Caucasian,40
+305,wording,,no_br,12,10,10,30,31,61,31,20,,,,,,,,,,25,,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,40,1,Dem,Female,White or Caucasian,21
+306,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,23,,,38,61,32,,,46,68,11,51,,,,0.5,Rep,Female,White or Caucasian,35
+307,wording,,br,50,50,50,50,50,0,50,0,,,,,,,,,,10,10,,,,,,,,,,,,,,,,,,,,,,,,,,,,49,50,50,0.5,Ind,,,30
+308,wording,,no_br,28,21,62,28,21,26,42,14,,,,,,,,,25,,28,,,,,,,,,,,,,,,,,,,,,,,,,,,,,33,43,0.25,Rep,Male,Asian or Pacific Islander,26
+309,timing,fast,br,,,,,,,,,,,,,,,,,,,,,77,,,89,,,43,78,63,71,40,20,72,,,,,,,,,,,,,,,,,0.5,Dem,Male,White or Caucasian,52
+310,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,43,,,,,43,36,65,35,23,51,20,21,,,,0.5,Ind,Female,White or Caucasian,37
+311,wording,,br,,,,,,,,,59,51,51,9,31,9,9,31,,10,30,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,10,30,1,Dem,Female,White or Caucasian,44
+312,wording,,no_br,,,,,,,,,95,50,70,50,40,20,60,20,10,,20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,30,0.75,Dem,Female,Other,21
+313,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,35,20,10,30,,,,,30,40,15,55,,,,1,Dem,Male,Other,29
+314,wording,,no_br,23,16,15,22,25,9,15,7,,,,,,,,,21,,29,,,,,,,,,,,,,,,,,,,,,,,,,,,,,14,24,1,Dem,Female,White or Caucasian,64
+315,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,73,2,,,,56,86,53,71,51,14,82,,,,0.25,Dem,Female,White or Caucasian,20
+316,wording,,no_br,76,36,39,27,49,31,74,30,,,,,,,,,,40,60,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,65,0.5,Ind,Female,White or Caucasian,59
+317,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,22,6,16,,,,30,,,75,81,26,18,,,,0.75,Rep,Male,White or Caucasian,42
+318,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,52,,31,25,,23,,,,17,54,15,60,,,,0.75,Dem,Male,White or Caucasian,29
+319,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,25,,35,8,,,,10,,12,45,40,65,,,,0.75,Ind,Female,Asian or Pacific Islander,24
+320,wording,,no_br,75,51,71,39,24,49,77,27,,,,,,,,,35,,60,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,80,1,Dem,Male,Hispanic or Latino,41
+321,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,57,71,34,,,,,44,60,31,44,60,55,,,,0.25,Rep,Female,White or Caucasian,40
+322,wording,,br,80,15,70,30,81,30,55,40,,,,,,,,,50,,,61,,,,,,,,,,,,,,,,,,,,,,,,,,,50,25,25,0.25,Dem,Male,Hispanic or Latino,20
+323,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,49,,10,,,,58,29,,17,4,22,29,,,,,,,,,,,,,,,,,0.75,Dem,Female,White or Caucasian,26
+324,wording,,no_br,,,,,,,,,15,12,6,50,9,15,6,5,,7,16,,,,,,,,,,,,,,,,,,,,,,,,,,,,,15,16,1,Dem,Male,White or Caucasian,30
+325,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,62,,6,,76,,23,,29,10,20,40,,,,,,,,,,,,,,,,,0.75,Rep,Male,White or Caucasian,23
+326,wording,,br,,,,,,,,,35,18,3,38,30,20,8,5,19,,,28,,,,,,,,,,,,,,,,,,,,,,,,,,,30,10,20,1,Ind,Male,Asian or Pacific Islander,50
+327,wording,,no_br,,,,,,,,,13,15,12,27,38,12,15,17,30,,30,,,,,,,,,,,,,,,,,,,,,,,,,,,,,18,36,1,Rep,Male,Asian or Pacific Islander,25
+328,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,34,,34,,39,7,41,15,34,19,28,,,,0.5,Dem,Female,White or Caucasian,40
+329,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,15,,20,,10,34,,23,17,23,9,29,,,,1,Dem,Male,White or Caucasian,37
+330,wording,,br,69,68,35,68,17,73,6,13,,,,,,,,,10,,,36,,,,,,,,,,,,,,,,,,,,,,,,,,,19,20,25,1,Dem,Male,Asian or Pacific Islander,30
+331,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,49,52,50,,,50,,,,33,28,35,14,,,,,,,,,,,,,,,,,0.5,Ind,Male,White or Caucasian,51
+332,wording,,no_br,60,70,5,40,23,60,12,5,,,,,,,,,15,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,37,69,1,Dem,Male,White or Caucasian,25
+333,wording,,no_br,95,65,20,80,80,20,55,85,,,,,,,,,,45,,60,,,,,,,,,,,,,,,,,,,,,,,,,,,,50,45,0.75,Dem,Female,Black or African American,22
+334,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,50,63,45,,40,,,62,30,71,41,30,,,,0.5,Dem,Female,White or Caucasian,24
+335,wording,,br,25,38,4,40,30,7,24,12,,,,,,,,,32,,70,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,15,40,0.5,Dem,Female,White or Caucasian,57
+336,wording,,br,,,,,,,,,51,25,40,50,71,41,40,41,,9,,40,,,,,,,,,,,,,,,,,,,,,,,,,,,20,10,20,0.5,Rep,Female,White or Caucasian,53
+337,wording,,no_br,,,,,,,,,60,70,39,58,11,0,42,8,,10,54,,,,,,,,,,,,,,,,,,,,,,,,,,,,,67,40,0.75,Rep,Male,White or Caucasian,39
+338,wording,,br,,,,,,,,,21,21,22,34,43,25,55,25,15,,55,,,,,,,,,,,,,,,,,,,,,,,,,,,,62,30,30,0.75,Ind,Male,Asian or Pacific Islander,26
+339,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,47,,26,30,,48,,28,28,26,27,,,,0.75,Rep,Male,White or Caucasian,25
+340,wording,,br,82,14,70,82,53,20,93,21,,,,,,,,,10,,31,,,,,,,,,,,,,,,,,,,,,,,,,,,,50,32,82,1,Dem,Female,Black or African American,46
+341,wording,,no_br,,,,,,,,,40,15,10,25,30,10,15,10,,5,60,,,,,,,,,,,,,,,,,,,,,,,,,,,,,15,30,0.75,Dem,Female,White or Caucasian,39
+342,wording,,br,48,70,25,74,38,39,25,36,,,,,,,,,6,,40,,,,,,,,,,,,,,,,,,,,,,,,,,,,25,10,45,1,Ind,Male,White or Caucasian,23
+343,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,25,21,,18,,26,,,,30,48,8,40,,,,1,Ind,Male,White or Caucasian,41
+344,wording,,no_br,,,,,,,,,40,60,20,60,75,45,27,22,22,,20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10,40,0.25,Ind,Female,Black or African American,37
+345,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,,15,,0,68,57,,28,29,10,9,13,,,,,,,,,,,,,,,,,0.75,Dem,Male,White or Caucasian,64
+346,wording,,no_br,,,,,,,,,30,60,75,55,35,5,25,25,30,,,65,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,65,0.75,Dem,Female,White or Caucasian,48
+347,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,60,35,,35,,20,40,25,45,30,70,,,,0.5,Dem,Female,White or Caucasian,32
+348,wording,,no_br,45,70,25,55,30,20,15,10,,,,,,,,,30,,,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,55,70,1,Dem,Female,White or Caucasian,22
+349,wording,,br,56,41,55,32,29,21,26,20,,,,,,,,,42,,57,,,,,,,,,,,,,,,,,,,,,,,,,,,,61,51,72,1,Rep,Male,White or Caucasian,35
+350,wording,,br,,,,,,,,,50,72,13,37,25,18,15,35,30,,,30,,,,,,,,,,,,,,,,,,,,,,,,,,,61,57,65,0.25,Dem,Female,White or Caucasian,37
+351,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,17,23,50,78,,56,52,45,47,,,,1,Dem,Male,Asian or Pacific Islander,21
+352,wording,,no_br,35,15,25,33,28,15,16,20,,,,,,,,,,15,30,,,,,,,,,,,,,,,,,,,,,,,,,,,,,22,30,1,Dem,Male,White or Caucasian,29
+353,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,23,67,31,73,,,,,41,36,34,40,,,,,,,,,,,,,,,,,1,Rep,Male,White or Caucasian,39
+354,wording,,br,,,,,,,,,30,72,10,41,19,8,18,17,,4,30,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,12,20,1,Dem,Male,White or Caucasian,42
+355,wording,,no_br,,,,,,,,,43,52,52,52,30,21,42,19,,29,,40,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,60,0.75,Rep,Female,White or Caucasian,35
+356,wording,,no_br,,,,,,,,,30,60,20,60,30,20,30,20,,5,,30,,,,,,,,,,,,,,,,,,,,,,,,,,,,5,20,0.75,Rep,Male,White or Caucasian,47
+357,wording,,no_br,40,35,35,30,25,30,20,10,,,,,,,,,,10,30,,,,,,,,,,,,,,,,,,,,,,,,,,,,,35,65,1,Dem,Female,White or Caucasian,37
+358,wording,,br,30,50,50,21,5,31,0,90,,,,,,,,,,8,60,,,,,,,,,,,,,,,,,,,,,,,,,,,,15,5,10,0.5,Dem,Male,White or Caucasian,33
+359,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,81,,,39,,60,24,14,31,9,25,10,,,,0.5,Rep,Female,White or Caucasian,33
+360,wording,,br,16,32,8,36,35,16,22,26,,,,,,,,,,30,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,35,25,15,0.75,Dem,Male,Asian or Pacific Islander,27
+361,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,18,39,19,,43,,,,,42,66,31,30,,,,0.75,Dem,Female,White or Caucasian,23
+362,wording,,no_br,,,,,,,,,42,22,8,56,48,20,54,41,,41,50,,,,,,,,,,,,,,,,,,,,,,,,,,,,,21,31,0.25,Dem,Female,White or Caucasian,40
+363,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,,,35,30,82,38,,,41,7,8,55,,,,,,,,,,,,,,,,,0.75,Dem,Female,White or Caucasian,28
+364,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,50,,,2,,87,0,,50,0,60,2,2,,,,0.5,Rep,Female,White or Caucasian,33
+365,wording,,no_br,,,,,,,,,50,74,40,37,55,68,10,84,59,,,72,,,,,,,,,,,,,,,,,,,,,,,,,,,,22,66,0.75,Dem,Male,White or Caucasian,32
+366,wording,,no_br,80,80,60,70,30,50,50,15,,,,,,,,,40,,65,,,,,,,,,,,,,,,,,,,,,,,,,,,,,50,80,1,Dem,Male,Asian or Pacific Islander,19
+367,wording,,br,,,,,,,,,30,75,20,51,40,30,19,19,10,,,50,,,,,,,,,,,,,,,,,,,,,,,,,,,60,40,80,0.75,Dem,Female,White or Caucasian,33
+368,wording,,no_br,30,76,13,60,30,24,18,19,,,,,,,,,,10,,31,,,,,,,,,,,,,,,,,,,,,,,,,,,,39,42,1,Dem,Female,White or Caucasian,53
+369,wording,,br,70,71,19,60,30,25,18,11,,,,,,,,,15,,,45,,,,,,,,,,,,,,,,,,,,,,,,,,,50,40,60,1,Dem,Male,White or Caucasian,24
+370,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,22,,70,,,57,18,,,87,93,93,100,,,,0.5,Dem,Female,Asian or Pacific Islander,37
+371,wording,,no_br,,,,,,,,,60,37,17,37,39,34,36,20,,26,,43,,,,,,,,,,,,,,,,,,,,,,,,,,,,51,71,0.75,Rep,Male,White or Caucasian,37
+372,wording,,br,,,,,,,,,50,60,10,50,51,20,8,15,20,,,71,,,,,,,,,,,,,,,,,,,,,,,,,,,20,10,40,0.75,Rep,Male,White or Caucasian,56
+373,timing,fast,br,,,,,,,,,,,,,,,,,,,,,10,25,15,,,,,3,20,15,12,6,35,,,,,,,,,,,,,,,,,1,Ind,Male,White or Caucasian,41
+374,wording,,br,38,55,25,41,24,27,8,5,,,,,,,,,8,,26,,,,,,,,,,,,,,,,,,,,,,,,,,,,25,10,15,0.5,Dem,Male,White or Caucasian,31
+375,wording,,no_br,31,52,12,36,39,8,30,33,,,,,,,,,15,,,20,,,,,,,,,,,,,,,,,,,,,,,,,,,,6,10,0.5,Dem,Female,Black or African American,22
+376,wording,,br,55,70,6,50,19,20,1,1,,,,,,,,,1,,,65,,,,,,,,,,,,,,,,,,,,,,,,,,,60,40,81,1,Rep,Female,White or Caucasian,39
+377,wording,,br,57,55,26,51,29,44,28,13,,,,,,,,,15,,,40,,,,,,,,,,,,,,,,,,,,,,,,,,,13,5,34,1,Dem,Female,White or Caucasian,40
+378,wording,,no_br,30,20,8,20,20,9,6,9,,,,,,,,,,20,27,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5,10,1,Rep,Male,White or Caucasian,60
+379,timing,fast,br,,,,,,,,,,,,,,,,,,,,,50,,50,50,,,,81,31,50,20,30,51,,,,,,,,,,,,,,,,,0.5,Dem,Female,White or Caucasian,55
+380,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,,100,,61,70,61,,,71,39,40,61,,,,,,,,,,,,,,,,,0.75,Rep,Male,White or Caucasian,32
+381,wording,,br,60,30,10,50,40,8,20,10,,,,,,,,,,10,,30,,,,,,,,,,,,,,,,,,,,,,,,,,,50,30,60,1,Dem,Female,White or Caucasian,37
+382,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,,0,,,39,,15,,14,37,0,37,,,,1,Dem,Male,White or Caucasian,31
+383,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,15,,,5,,61,,15,20,25,15,5,60,,,,0.75,Dem,Male,White or Caucasian,65
+384,timing,fast,br,,,,,,,,,,,,,,,,,,,,,30,,50,,,,70,10,30,20,20,40,70,,,,,,,,,,,,,,,,,0.75,Dem,Female,Asian or Pacific Islander,25
+385,wording,,no_br,,,,,,,,,40,82,30,20,25,35,15,20,,20,20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,80,0.5,Rep,Male,White or Caucasian,55
+386,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,19,7,40,40,,,29,14,36,9,40,,,,1,Ind,Male,White or Caucasian,53
+387,wording,,br,,,,,,,,,59,83,71,56,87,85,96,76,72,,,68,,,,,,,,,,,,,,,,,,,,,,,,,,,77,65,77,0,Rep,Female,Black or African American,37
+388,wording,,br,18,50,30,34,0,75,2,20,,,,,,,,,30,,,29,,,,,,,,,,,,,,,,,,,,,,,,,,,30,50,50,0.25,Dem,Female,White or Caucasian,30
+389,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,38,8,35,,33,,,,32,50,75,14,66,,,,0.75,Ind,Male,White or Caucasian,73
+390,wording,,no_br,10,16,1,17,42,79,32,7,,,,,,,,,31,,,28,,,,,,,,,,,,,,,,,,,,,,,,,,,,9,61,1,Ind,Male,White or Caucasian,57
+391,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,59,72,30,,,,90,51,79,21,39,41,,,,,,,,,,,,,,,,,0.25,Dem,Male,White or Caucasian,40
+392,timing,fast,br,,,,,,,,,,,,,,,,,,,,,50,8,,30,,,,32,42,50,25,32,63,,,,,,,,,,,,,,,,,0.75,Rep,Female,White or Caucasian,44
+393,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,25,34,,,25,,,,40,60,18,50,,,,1,Dem,Female,Asian or Pacific Islander,23
+394,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,15,8,,20,55,,35,35,35,5,45,,,,0.75,Dem,Male,White or Caucasian,56
+395,wording,,br,,,,,,,,,40,9,81,32,8,15,50,8,,39,24,,,,,,,,,,,,,,,,,,,,,,,,,,,,19,9,51,0.5,Ind,Female,White or Caucasian,23
+396,wording,,br,20,10,4,60,45,40,70,20,,,,,,,,,20,,,70,,,,,,,,,,,,,,,,,,,,,,,,,,,30,5,70,1,Rep,Male,White or Caucasian,46
+397,wording,,br,,,,,,,,,35,36,16,36,38,31,19,27,,30,,50,,,,,,,,,,,,,,,,,,,,,,,,,,,33,11,41,0.75,Dem,Female,Asian or Pacific Islander,22
+398,wording,,no_br,30,40,30,30,25,65,50,20,,,,,,,,,20,,,50,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,55,1,Rep,Female,White or Caucasian,36
+399,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,41,69,38,,9,4,3,22,21,,,,0.25,Ind,Female,White or Caucasian,21
+400,wording,,no_br,,,,,,,,,12,1,10,18,38,1,20,6,19,,,33,,,,,,,,,,,,,,,,,,,,,,,,,,,,19,51,0.25,Rep,Female,White or Caucasian,45
+401,wording,,no_br,67,57,84,40,19,11,20,19,,,,,,,,,,9,,20,,,,,,,,,,,,,,,,,,,,,,,,,,,,6,17,0.75,Dem,Female,White or Caucasian,53
+402,timing,fast,br,,,,,,,,,,,,,,,,,,,,,21,,21,,31,,31,,19,19,18,16,17,,,,,,,,,,,,,,,,,0.5,Dem,Female,White or Caucasian,73
+403,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,72,11,,13,,,,4,,31,21,24,40,,,,,,,,,,,,,,,,,0.25,Rep,Female,White or Caucasian,45
+404,wording,,br,,,,,,,,,67,41,57,56,53,65,43,55,65,,,69,,,,,,,,,,,,,,,,,,,,,,,,,,,58,70,44,0.25,Rep,Male,White or Caucasian,29
+405,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5,15,20,20,,30,10,50,30,50,,,,0.75,Rep,Female,White or Caucasian,43
+406,timing,fast,br,,,,,,,,,,,,,,,,,,,,,20,19,,,,,61,19,70,82,50,29,70,,,,,,,,,,,,,,,,,1,Rep,Male,White or Caucasian,39
+407,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,41,,,28,82,,72,,,82,33,63,34,,,,,,,,,,,,,,,,,0.5,Rep,Female,White or Caucasian,47
+408,wording,,no_br,,,,,,,,,24,44,10,24,25,31,24,14,,15,42,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,80,1,Ind,Male,White or Caucasian,35
+409,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,60,,,18,36,,,30,28,21,40,13,31,,,,0.75,Ind,Female,White or Caucasian,23
+410,wording,,br,,,,,,,,,33,61,42,65,32,21,41,39,39,,,21,,,,,,,,,,,,,,,,,,,,,,,,,,,62,57,51,0,Rep,Male,Hispanic or Latino,30
+411,wording,,br,28,21,10,41,30,19,14,7,,,,,,,,,5,,,25,,,,,,,,,,,,,,,,,,,,,,,,,,,26,20,36,1,Dem,Female,White or Caucasian,58
+412,wording,,no_br,22,21,4,44,21,22,17,11,,,,,,,,,,24,,30,,,,,,,,,,,,,,,,,,,,,,,,,,,,22,26,1,Dem,Male,Asian or Pacific Islander,40
+413,timing,fast,br,,,,,,,,,,,,,,,,,,,,,32,17,,,,52,,20,27,59,21,23,49,,,,,,,,,,,,,,,,,1,Rep,Male,White or Caucasian,35
+414,wording,,br,,,,,,,,,78,71,73,54,63,63,67,66,,67,55,,,,,,,,,,,,,,,,,,,,,,,,,,,,84,29,50,0.25,Rep,Female,White or Caucasian,23
+415,wording,,br,11,2,4,24,6,2,4,1,,,,,,,,,,35,,45,,,,,,,,,,,,,,,,,,,,,,,,,,,47,30,17,1,Dem,Male,Asian or Pacific Islander,21
+416,wording,,no_br,,,,,,,,,60,70,10,83,95,60,11,10,30,,,82,,,,,,,,,,,,,,,,,,,,,,,,,,,,15,30,0.75,Dem,Female,White or Caucasian,53
+417,wording,,no_br,,,,,,,,,40,80,10,40,5,5,70,5,,4,,13,,,,,,,,,,,,,,,,,,,,,,,,,,,,10,20,0.5,Rep,Female,White or Caucasian,40
+418,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,15,40,10,,20,,,,65,35,17,85,,,,,,,,,,,,,,,,,0.5,Dem,Female,White or Caucasian,31
+419,wording,,br,25,7,9,19,5,53,40,6,,,,,,,,,47,,,38,,,,,,,,,,,,,,,,,,,,,,,,,,,55,35,49,1,Dem,Male,White or Caucasian,30
+420,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,44,19,,,76,,35,,,62,38,25,25,,,,,,,,,,,,,,,,,0.75,Rep,Female,White or Caucasian,43
+421,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,22,12,,38,,,,25,40,32,30,,,,1,Ind,Male,White or Caucasian,68
+422,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,5,,,70,5,25,15,30,10,35,,,,1,Dem,Male,White or Caucasian,28
+423,wording,,br,55,35,35,50,20,30,45,10,,,,,,,,,,25,15,,,,,,,,,,,,,,,,,,,,,,,,,,,,25,10,15,1,Dem,Male,White or Caucasian,22
+424,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10,25,10,40,,,,30,25,35,5,35,,,,1,Rep,Male,White or Caucasian,60
+425,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,,60,,,85,70,75,,75,45,45,85,,,,,,,,,,,,,,,,,0.5,Dem,Female,Black or African American,59
+426,timing,fast,br,,,,,,,,,,,,,,,,,,,,,6,,,27,,20,,19,30,36,24,20,28,,,,,,,,,,,,,,,,,0.5,Dem,Male,Asian or Pacific Islander,30
+427,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,,45,20,,35,40,,70,66,33,20,67,,,,,,,,,,,,,,,,,0.5,Dem,Male,White or Caucasian,27
+428,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,18,14,42,,56,,,58,78,32,29,,,,1,Dem,Male,White or Caucasian,46
+429,wording,,br,30,60,10,50,40,30,30,20,,,,,,,,,30,,60,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,37,45,0.5,Dem,Female,Black or African American,22
+430,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,25,20,,15,,,60,,40,20,65,8,50,,,,1,Dem,Male,White or Caucasian,50
+431,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,25,30,20,,,42,,,40,35,45,23,65,,,,1,Dem,Male,White or Caucasian,66
+432,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,65,30,,,60,,,50,,30,55,20,55,,,,0.5,Rep,Female,White or Caucasian,70
+433,wording,,br,,,,,,,,,47,56,72,66,64,71,48,56,66,,,84,,,,,,,,,,,,,,,,,,,,,,,,,,,63,73,51,0.25,Dem,Male,White or Caucasian,25
+434,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,,60,,,30,35,,,15,25,45,45,,,,0.5,Ind,Male,White or Caucasian,70
+435,wording,,br,,,,,,,,,41,41,34,72,38,10,6,26,10,,62,,,,,,,,,,,,,,,,,,,,,,,,,,,,61,30,41,1,Rep,Female,White or Caucasian,38
+436,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,,36,,60,,65,20,,55,30,6,45,,,,,,,,,,,,,,,,,1,Dem,Female,White or Caucasian,35
+437,wording,,br,22,55,14,33,37,0,7,26,,,,,,,,,,25,,50,,,,,,,,,,,,,,,,,,,,,,,,,,,20,10,38,0.25,Dem,Female,White or Caucasian,24
+438,wording,,no_br,,,,,,,,,75,75,75,50,15,8,22,10,17,,60,,,,,,,,,,,,,,,,,,,,,,,,,,,,,13,20,1,Dem,Male,White or Caucasian,39
+439,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,35,,70,25,,15,30,20,35,,,,0.75,Dem,Male,White or Caucasian,22
+440,wording,,br,51,20,53,30,37,37,45,29,,,,,,,,,,5,10,,,,,,,,,,,,,,,,,,,,,,,,,,,,51,19,87,0.5,Dem,Male,White or Caucasian,48
+441,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,10,,30,,80,,10,60,70,50,20,60,,,,,,,,,,,,,,,,,0.75,Rep,Male,White or Caucasian,48
+442,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,61,,41,,35,10,,70,81,24,92,,,,0.75,Dem,Male,White or Caucasian,25
+443,timing,fast,br,,,,,,,,,,,,,,,,,,,,,24,22,,,,55,61,,60,63,39,30,9,,,,,,,,,,,,,,,,,1,Ind,Male,White or Caucasian,50
+444,wording,,br,,,,,,,,,20,20,10,30,30,20,20,20,,40,,10,,,,,,,,,,,,,,,,,,,,,,,,,,,40,40,60,0.25,Ind,Female,White or Caucasian,38
+445,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,25,,35,,60,,30,5,25,25,30,,,,1,Ind,Male,White or Caucasian,42
+446,wording,,no_br,39,70,11,53,49,70,28,12,,,,,,,,,,4,,51,,,,,,,,,,,,,,,,,,,,,,,,,,,,49,61,1,Rep,Female,White or Caucasian,41
+447,wording,,br,,,,,,,,,15,30,5,7,20,15,25,5,,19,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,19,14,24,1,Rep,Male,White or Caucasian,40
+448,wording,,br,,,,,,,,,16,3,3,10,6,4,4,10,41,,70,,,,,,,,,,,,,,,,,,,,,,,,,,,,80,20,60,0.25,Ind,Female,White or Caucasian,56
+449,wording,,br,40,50,50,60,37,7,0,29,,,,,,,,,,24,,31,,,,,,,,,,,,,,,,,,,,,,,,,,,70,48,69,0.25,Dem,Female,White or Caucasian,29
+450,wording,,br,46,62,17,39,5,44,54,4,,,,,,,,,7,,,18,,,,,,,,,,,,,,,,,,,,,,,,,,,16,13,20,1,Ind,Male,White or Caucasian,31
+451,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,,,30,67,58,,71,48,77,45,29,41,,,,,,,,,,,,,,,,,0.75,Dem,Male,Black or African American,37
+452,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,70,,,,50,,5,60,40,83,74,70,,,,1,Dem,Male,White or Caucasian,24
+453,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,67,,71,21,54,,,,,81,25,25,75,,,,,,,,,,,,,,,,,0.75,Dem,Female,Hispanic or Latino,65
+454,wording,,br,60,29,8,73,29,13,31,19,,,,,,,,,,30,50,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,19,71,1,Dem,Female,White or Caucasian,48
+455,wording,,no_br,44,59,72,78,59,17,42,22,,,,,,,,,,29,59,,,,,,,,,,,,,,,,,,,,,,,,,,,,,44,58,0.25,Dem,Male,White or Caucasian,32
+456,wording,,br,38,76,5,58,25,16,24,4,,,,,,,,,,12,36,,,,,,,,,,,,,,,,,,,,,,,,,,,,37,26,46,1,Dem,Male,White or Caucasian,39
+457,wording,,br,,,,,,,,,15,25,8,40,33,6,10,12,13,,,61,,,,,,,,,,,,,,,,,,,,,,,,,,,34,34,36,1,Dem,Male,White or Caucasian,32
+458,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,15,,5,40,,,5,61,60,65,15,60,,,,1,Dem,Male,White or Caucasian,31
+459,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,35,10,,,,,60,39,19,4,15,32,40,,,,0.75,Dem,Female,White or Caucasian,34
+460,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,70,30,15,,,10,,20,35,8,55,,,,1,Rep,Male,White or Caucasian,42
+461,wording,,br,41,70,50,40,41,52,40,20,,,,,,,,,,10,30,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,30,71,1,Dem,Male,Other,29
+462,wording,,no_br,70,40,80,30,20,0,5,10,,,,,,,,,,60,,70,,,,,,,,,,,,,,,,,,,,,,,,,,,,60,40,0.75,Dem,Male,Hispanic or Latino,26
+463,wording,,no_br,25,65,2,68,17,27,45,5,,,,,,,,,,6,,22,,,,,,,,,,,,,,,,,,,,,,,,,,,,16,22,1,Dem,Male,White or Caucasian,34
+464,wording,,br,60,19,82,49,71,21,70,21,,,,,,,,,19,,41,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,9,29,0.75,Rep,Female,White or Caucasian,36
+465,wording,,br,,,,,,,,,40,79,20,40,20,10,40,10,10,,40,,,,,,,,,,,,,,,,,,,,,,,,,,,,50,10,40,0.75,Dem,Male,Other,34
+466,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,18,,15,35,20,55,35,65,35,18,,,,0.5,Rep,Female,White or Caucasian,44
+467,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,81,60,,,65,65,,55,71,40,15,70,,,,,,,,,,,,,,,,,0.75,Dem,Male,Hispanic or Latino,34
+468,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,36,15,,40,,20,47,43,31,39,61,,,,1,Dem,Male,White or Caucasian,35
+469,wording,,br,25,10,4,13,16,44,55,39,,,,,,,,,,4,25,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,20,20,0.75,Rep,Female,White or Caucasian,31
+470,wording,,no_br,16,12,2,14,12,14,16,10,,,,,,,,,,1,,19,,,,,,,,,,,,,,,,,,,,,,,,,,,,18,28,1,Dem,Male,White or Caucasian,46
+471,wording,,no_br,,,,,,,,,30,50,40,50,30,20,20,10,15,,,40,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,30,0.75,Dem,Male,White or Caucasian,36
+472,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,62,33,,,,46,8,,35,52,54,44,,,,1,Dem,Female,White or Caucasian,30
+473,wording,,no_br,,,,,,,,,71,92,31,69,35,39,45,21,,30,,60,,,,,,,,,,,,,,,,,,,,,,,,,,,,11,18,1,Dem,Male,Asian or Pacific Islander,23
+474,wording,,br,,,,,,,,,83,85,17,50,30,21,21,9,,30,31,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,19,22,0.5,Ind,Male,White or Caucasian,29
+475,wording,,no_br,50,45,75,70,30,10,40,40,,,,,,,,,0,,25,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0.25,Dem,Female,Hispanic or Latino,34
+476,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,75,35,13,,,12,23,16,30,30,36,,,,1,Dem,Male,Asian or Pacific Islander,29
+477,wording,,br,,,,,,,,,82,90,52,78,87,79,76,65,40,,,47,,,,,,,,,,,,,,,,,,,,,,,,,,,70,48,93,0.25,Rep,Female,White or Caucasian,29
+478,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,,10,7,,,40,,30,10,20,5,60,,,,0.75,Rep,Female,White or Caucasian,55
+479,wording,,no_br,,,,,,,,,60,28,40,37,41,40,72,60,,30,40,,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,61,0.75,Ind,Female,White or Caucasian,45
+480,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,35,50,,20,,35,,,,65,30,20,25,,,,,,,,,,,,,,,,,0.5,Rep,Female,White or Caucasian,33
+481,wording,,no_br,,,,,,,,,60,70,5,50,70,5,10,6,,5,70,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6,30,0.75,Ind,Female,White or Caucasian,25
+482,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,14,,33,,,25,58,6,3,4,27,70,,,,1,Dem,Male,Black or African American,30
+483,wording,,br,50,54,60,34,79,7,18,25,,,,,,,,,25,,30,,,,,,,,,,,,,,,,,,,,,,,,,,,,75,46,65,0.5,Dem,Female,Black or African American,54
+484,wording,,br,,,,,,,,,51,59,32,30,40,9,10,33,,41,57,,,,,,,,,,,,,,,,,,,,,,,,,,,,51,20,31,0.5,Rep,Female,White or Caucasian,47
+485,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,15,10,,60,,,13,40,31,20,45,51,,,,,,,,,,,,,,,,,1,Ind,Male,Other,27
+486,wording,,br,39,38,5,63,18,20,31,6,,,,,,,,,,31,,63,,,,,,,,,,,,,,,,,,,,,,,,,,,12,8,16,1,Dem,Male,Asian or Pacific Islander,24
+487,wording,,br,45,25,15,40,20,65,60,15,,,,,,,,,,20,30,,,,,,,,,,,,,,,,,,,,,,,,,,,,25,20,32,1,Rep,Male,White or Caucasian,37
+488,wording,,br,51,25,8,60,25,81,34,14,,,,,,,,,,2,,64,,,,,,,,,,,,,,,,,,,,,,,,,,,40,19,43,1,Dem,Female,Black or African American,26
+489,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,17,,10,,41,,,25,19,31,29,55,,,,0.75,Dem,Male,Asian or Pacific Islander,21
+490,wording,,br,30,50,15,15,55,11,40,40,,,,,,,,,,5,,25,,,,,,,,,,,,,,,,,,,,,,,,,,,25,10,30,0.5,Rep,Male,White or Caucasian,44
+491,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,,18,,,41,39,25,55,81,18,19,36,,,,,,,,,,,,,,,,,0.75,Dem,Male,White or Caucasian,52
+492,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,,65,,25,75,,55,,35,20,18,70,,,,,,,,,,,,,,,,,0.75,Dem,Male,Asian or Pacific Islander,39
+493,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,25,50,,,60,30,,,,45,65,33,40,,,,0.75,Rep,Female,White or Caucasian,26
+494,wording,,br,27,26,42,39,17,49,38,34,,,,,,,,,,43,37,,,,,,,,,,,,,,,,,,,,,,,,,,,,45,37,40,0.5,Rep,Male,White or Caucasian,22
+495,wording,,no_br,,,,,,,,,84,49,71,60,42,46,54,63,,49,46,,,,,,,,,,,,,,,,,,,,,,,,,,,,,77,58,0.5,Rep,Male,Asian or Pacific Islander,18
+496,wording,,no_br,,,,,,,,,20,50,60,50,60,20,10,10,,30,,61,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,40,0.75,Rep,Female,White or Caucasian,52
+497,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,39,,,75,61,,62,,74,18,21,20,,,,,,,,,,,,,,,,,0.5,Ind,Female,White or Caucasian,48
+498,wording,,br,20,90,20,40,35,30,10,10,,,,,,,,,,5,,60,,,,,,,,,,,,,,,,,,,,,,,,,,,60,50,90,0.75,Ind,Female,White or Caucasian,39
+499,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,40,,,34,80,,,50,,71,45,51,11,,,,,,,,,,,,,,,,,0.25,Ind,Female,Other,34
+500,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,44,54,17,,,,,18,,28,44,14,48,,,,0.5,Ind,Female,White or Caucasian,34
+501,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,39,,,30,,71,,20,,19,92,20,71,,,,0.5,Dem,Female,White or Caucasian,45
+502,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,25,,,,,90,80,10,,31,45,30,60,,,,0.75,Dem,Female,White or Caucasian,32
+503,wording,,no_br,,,,,,,,,50,26,30,41,20,17,10,14,47,,31,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10,61,0.25,Ind,Male,White or Caucasian,27
+504,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,37,,,,45,61,13,,,,,,,,,,,,,,,,,,,,,,0.75,Rep,Male,White or Caucasian,33
+505,wording,,br,,,,,,,,,58,90,47,58,35,19,10,45,41,,,51,,,,,,,,,,,,,,,,,,,,,,,,,,,61,45,75,0.5,Dem,Female,White or Caucasian,60
+506,timing,fast,br,,,,,,,,,,,,,,,,,,,,,72,,,10,50,,72,,52,65,40,13,62,,,,,,,,,,,,,,,,,1,Dem,Female,White or Caucasian,43
+507,wording,,no_br,53,82,8,45,22,18,36,13,,,,,,,,,,26,,36,,,,,,,,,,,,,,,,,,,,,,,,,,,,24,29,1,Ind,Male,White or Caucasian,37
+508,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6,,6,,16,,5,28,23,33,8,24,,,,1,Dem,Female,White or Caucasian,57
+509,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,,20,18,52,,65,,,55,42,19,15,,,,,,,,,,,,,,,,,1,Dem,Male,White or Caucasian,45
+510,wording,,br,52,31,22,41,35,8,17,15,,,,,,,,,32,,,24,,,,,,,,,,,,,,,,,,,,,,,,,,,41,30,55,1,Dem,Male,White or Caucasian,31
+511,wording,,no_br,,,,,,,,,41,49,28,66,40,23,47,10,,35,,67,,,,,,,,,,,,,,,,,,,,,,,,,,,,29,73,0.75,Dem,Male,White or Caucasian,60
+512,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,45,,,34,37,5,,49,63,5,80,,,,0.5,Rep,Male,White or Caucasian,43
+513,wording,,no_br,40,50,29,75,50,70,35,49,,,,,,,,,,50,20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,85,0.75,Rep,Female,White or Caucasian,24
+514,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,27,,20,,,,45,2,,46,44,27,18,,,,,,,,,,,,,,,,,1,Dem,Male,White or Caucasian,44
+515,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,51,,,,,10,51,16,72,45,40,9,36,,,,1,Ind,Female,Other,27
+516,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,4,,,1,,,40,3,35,45,45,7,10,,,,1,Rep,Male,White or Caucasian,40
+517,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,41,,,30,,29,51,,,15,45,20,60,,,,0.75,Dem,Male,White or Caucasian,30
+518,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,61,,33,,25,24,,41,70,18,31,,,,0.75,Dem,Male,White or Caucasian,55
+519,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,68,,8,72,,,80,83,82,90,50,71,,,,0.25,Ind,Male,Black or African American,30
+520,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,30,,35,60,50,,,40,60,45,30,80,,,,,,,,,,,,,,,,,1,Ind,Male,Asian or Pacific Islander,20
+521,timing,fast,br,,,,,,,,,,,,,,,,,,,,,56,45,,54,,,51,,34,47,26,23,37,,,,,,,,,,,,,,,,,0.75,Rep,Male,White or Caucasian,52
+522,wording,,br,,,,,,,,,57,52,51,56,18,60,45,10,21,,6,,,,,,,,,,,,,,,,,,,,,,,,,,,,5,2,2,0.75,Dem,Male,White or Caucasian,61
+523,wording,,no_br,,,,,,,,,37,60,35,50,21,68,13,20,,22,,23,,,,,,,,,,,,,,,,,,,,,,,,,,,,37,45,1,Rep,Female,Hispanic or Latino,33
+524,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,26,,25,,65,,72,,45,25,60,23,35,,,,0.75,Dem,Male,White or Caucasian,42
+525,wording,,no_br,68,51,10,55,45,54,50,15,,,,,,,,,,18,31,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,35,0.25,Ind,Male,White or Caucasian,24
+526,wording,,br,80,93,40,65,50,60,85,50,,,,,,,,,,30,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,36,43,0.75,Dem,Male,White or Caucasian,36
+527,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,,19,,31,31,38,,33,40,26,24,44,,,,,,,,,,,,,,,,,1,Dem,Female,White or Caucasian,59
+528,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,,5,10,15,,,10,25,26,8,34,14,,,,,,,,,,,,,,,,,0.75,Ind,Female,White or Caucasian,28
+529,wording,,no_br,55,24,3,45,20,43,35,12,,,,,,,,,,16,,55,,,,,,,,,,,,,,,,,,,,,,,,,,,,45,85,1,Rep,Male,White or Caucasian,52
+530,wording,,br,,,,,,,,,32,43,61,37,22,36,26,16,21,,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,61,22,39,1,Dem,Female,Other,41
+531,wording,,no_br,,,,,,,,,70,65,25,51,30,25,26,15,,35,75,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9,34,1,Dem,Male,Hispanic or Latino,31
+532,wording,,br,,,,,,,,,48,99,47,75,51,20,56,22,27,,,31,,,,,,,,,,,,,,,,,,,,,,,,,,,39,18,61,0.5,Dem,Male,White or Caucasian,26
+533,wording,,br,20,20,20,40,20,5,40,15,,,,,,,,,20,,80,,,,,,,,,,,,,,,,,,,,,,,,,,,,70,60,60,1,Dem,Male,Asian or Pacific Islander,22
+534,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,62,,,96,60,40,29,0,62,20,60,,,,0.75,Rep,Male,White or Caucasian,24
+535,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,,,55,30,45,,,35,35,35,65,,,,1,Ind,Female,White or Caucasian,32
+536,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,14,5,67,,64,,,15,16,26,7,,,,0.75,Ind,Female,Other,46
+537,wording,,no_br,,,,,,,,,30,80,15,40,30,37,50,15,29,,20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,56,60,0.5,Rep,Male,Hispanic or Latino,34
+538,wording,,br,50,80,20,60,40,80,50,50,,,,,,,,,30,,,50,,,,,,,,,,,,,,,,,,,,,,,,,,,70,20,50,0.25,Ind,Female,White or Caucasian,35
+539,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,93,,29,17,,69,,,26,7,27,70,53,,,,0.5,Rep,Male,Other,31
+540,wording,,no_br,92,14,31,51,84,85,84,67,,,,,,,,,82,,,29,,,,,,,,,,,,,,,,,,,,,,,,,,,,31,93,0.5,Rep,Female,White or Caucasian,69
+541,wording,,no_br,,,,,,,,,30,19,25,10,28,11,12,32,,15,,40,,,,,,,,,,,,,,,,,,,,,,,,,,,,28,71,0.75,Rep,Male,White or Caucasian,42
+542,wording,,br,61,74,53,55,21,22,20,18,,,,,,,,,26,,8,,,,,,,,,,,,,,,,,,,,,,,,,,,,46,53,51,0.25,Rep,Female,Hispanic or Latino,27
+543,wording,,no_br,52,47,22,52,24,26,16,10,,,,,,,,,,4,,52,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,35,1,Ind,Female,White or Caucasian,31
+544,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,42,,,60,,58,43,,38,29,17,57,,,,,,,,,,,,,,,,,1,Dem,Male,Asian or Pacific Islander,32
+545,wording,,no_br,,,,,,,,,100,100,6,100,81,59,85,88,41,,82,,,,,,,,,,,,,,,,,,,,,,,,,,,,,100,100,0.75,Dem,Female,White or Caucasian,25
+546,wording,,br,,,,,,,,,25,29,32,29,35,27,32,29,45,,45,,,,,,,,,,,,,,,,,,,,,,,,,,,,33,64,48,0.5,Dem,Male,White or Caucasian,25
+547,wording,,br,,,,,,,,,16,17,35,8,78,27,36,80,25,,,44,,,,,,,,,,,,,,,,,,,,,,,,,,,35,25,54,0.75,Dem,Male,White or Caucasian,28
+548,wording,,br,,,,,,,,,40,82,10,33,19,8,35,4,,7,,40,,,,,,,,,,,,,,,,,,,,,,,,,,,35,25,46,1,Dem,Female,White or Caucasian,27
+549,wording,,no_br,32,40,60,21,41,18,51,29,,,,,,,,,45,,,20,,,,,,,,,,,,,,,,,,,,,,,,,,,,9,25,0.25,Dem,Female,White or Caucasian,35
+550,timing,fast,br,,,,,,,,,,,,,,,,,,,,,20,20,20,,,,40,,20,30,10,20,40,,,,,,,,,,,,,,,,,1,Dem,Female,Black or African American,34
+551,timing,fast,br,,,,,,,,,,,,,,,,,,,,,29,,,,20,40,51,,30,30,30,40,30,,,,,,,,,,,,,,,,,0.75,Dem,Male,Asian or Pacific Islander,19
+552,wording,,br,,,,,,,,,30,35,1,30,40,35,30,30,15,,30,,,,,,,,,,,,,,,,,,,,,,,,,,,,35,25,50,1,Ind,Male,White or Caucasian,19
+553,wording,,br,,,,,,,,,60,55,50,60,30,40,20,20,,10,30,,,,,,,,,,,,,,,,,,,,,,,,,,,,25,10,50,0.5,Dem,Female,White or Caucasian,42
+554,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10,,,42,35,9,25,25,30,16,38,,,,0.5,Dem,Male,White or Caucasian,27
+555,wording,,br,55,20,75,40,34,30,31,34,,,,,,,,,,5,,30,,,,,,,,,,,,,,,,,,,,,,,,,,,45,45,65,0.5,Dem,Female,White or Caucasian,34
+556,timing,fast,br,,,,,,,,,,,,,,,,,,,,,18,,,10,32,,33,,31,39,26,10,31,,,,,,,,,,,,,,,,,1,Dem,Male,White or Caucasian,35
+557,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,,,40,25,,,51,70,,65,35,45,40,,,,,,,,,,,,,,,,,0.75,Rep,Male,Hispanic or Latino,28
+558,wording,,no_br,47,61,78,50,31,50,58,25,,,,,,,,,58,,63,,,,,,,,,,,,,,,,,,,,,,,,,,,,,45,65,0.25,Ind,Male,White or Caucasian,32
+559,wording,,br,,,,,,,,,57,38,26,73,69,51,52,10,17,,29,,,,,,,,,,,,,,,,,,,,,,,,,,,,57,56,47,1,Rep,Male,Hispanic or Latino,29
+560,wording,,br,47,61,14,33,65,13,30,11,,,,,,,,,22,,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,36,6,82,0.75,Dem,Female,White or Caucasian,44
+561,timing,fast,br,,,,,,,,,,,,,,,,,,,,,56,70,70,,80,,,,70,75,65,59,60,,,,,,,,,,,,,,,,,0.75,Ind,Male,White or Caucasian,21
+562,wording,,no_br,30,9,15,19,34,25,8,11,,,,,,,,,5,,25,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8,23,1,Ind,Female,White or Caucasian,30
+563,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,23,,29,8,,,22,,36,8,28,30,63,,,,0.5,Dem,Female,White or Caucasian,60
+564,wording,,br,80,65,45,40,69,74,76,67,,,,,,,,,,45,,60,,,,,,,,,,,,,,,,,,,,,,,,,,,72,41,62,0.25,Dem,Female,Other,40
+565,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,43,,36,,20,25,,,,9,29,44,57,,,,0.75,Rep,Female,White or Caucasian,36
+566,wording,,br,,,,,,,,,39,28,52,60,74,48,89,62,,100,92,,,,,,,,,,,,,,,,,,,,,,,,,,,,74,58,60,0.25,Rep,Female,White or Caucasian,30
+567,wording,,br,,,,,,,,,30,34,5,46,30,55,19,7,12,,,13,,,,,,,,,,,,,,,,,,,,,,,,,,,35,25,45,1,Rep,Male,White or Caucasian,54
+568,timing,fast,br,,,,,,,,,,,,,,,,,,,,,81,,73,72,,,,60,40,60,19,5,,,,,,,,,,,,,,,,,,1,Rep,Male,White or Caucasian,23
+569,wording,,no_br,,,,,,,,,50,40,30,70,40,60,35,70,,35,,70,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,60,0.5,Ind,Female,White or Caucasian,29
+570,wording,,no_br,,,,,,,,,50,80,35,25,30,20,25,10,20,,50,,,,,,,,,,,,,,,,,,,,,,,,,,,,,25,40,0.75,Ind,Female,White or Caucasian,31
+571,wording,,no_br,60,70,20,40,65,40,60,25,,,,,,,,,10,,40,,,,,,,,,,,,,,,,,,,,,,,,,,,,,40,65,0.75,Rep,Female,White or Caucasian,34
+572,wording,,no_br,,,,,,,,,21,31,2,18,20,13,15,4,,5,25,,,,,,,,,,,,,,,,,,,,,,,,,,,,,11,16,1,Rep,Male,White or Caucasian,31
+573,timing,fast,br,,,,,,,,,,,,,,,,,,,,,45,,33,,61,53,,,36,57,35,60,42,,,,,,,,,,,,,,,,,0.75,Dem,Male,White or Caucasian,44
+574,wording,,no_br,,,,,,,,,85,15,35,13,17,7,44,61,10,,,34,,,,,,,,,,,,,,,,,,,,,,,,,,,,8,16,0.25,Rep,Female,White or Caucasian,42
+575,wording,,no_br,,,,,,,,,30,65,60,25,35,40,50,15,20,,25,,,,,,,,,,,,,,,,,,,,,,,,,,,,,20,30,0.5,Rep,Male,White or Caucasian,38
+576,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,42,,51,30,,30,,,,30,30,30,51,,,,,,,,,,,,,,,,,1,Rep,Male,White or Caucasian,30
+577,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,25,,10,,50,30,,,65,75,15,30,,,,1,Dem,Male,White or Caucasian,30
+578,wording,,br,,,,,,,,,40,70,29,62,28,16,19,10,,20,30,,,,,,,,,,,,,,,,,,,,,,,,,,,,23,10,29,1,Dem,Male,White or Caucasian,32
+579,wording,,br,63,0,58,0,91,0,65,0,,,,,,,,,41,,,71,,,,,,,,,,,,,,,,,,,,,,,,,,,40,20,20,0.5,Ind,Female,White or Caucasian,65
+580,wording,,br,,,,,,,,,35,85,2,70,30,10,40,8,,7,11,,,,,,,,,,,,,,,,,,,,,,,,,,,,30,10,20,1,Dem,Male,White or Caucasian,38
+581,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,19,3,,5,,,23,,,65,40,,20,,,,,,,,,,,,,,,,,0.75,Rep,Male,White or Caucasian,38
+582,wording,,br,,,,,,,,,40,21,19,75,50,85,62,27,75,,60,,,,,,,,,,,,,,,,,,,,,,,,,,,,52,31,70,0.75,Dem,Female,White or Caucasian,19
+583,wording,,br,,,,,,,,,81,61,52,70,62,50,60,77,29,,,35,,,,,,,,,,,,,,,,,,,,,,,,,,,39,40,61,1,Ind,Male,White or Caucasian,37
+584,wording,,no_br,30,28,5,35,29,6,5,15,,,,,,,,,,8,60,,,,,,,,,,,,,,,,,,,,,,,,,,,,,5,30,0.75,Rep,Female,White or Caucasian,58
+585,timing,fast,br,,,,,,,,,,,,,,,,,,,,,2,,,4,,,34,100,77,89,58,19,71,,,,,,,,,,,,,,,,,1,Dem,Male,White or Caucasian,30
+586,timing,slow,br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,16,,,12,,,33,40,50,10,40,20,50,,,,0.75,Dem,Female,White or Caucasian,52
+587,timing,fast,br,,,,,,,,,,,,,,,,,,,,,,17,,12,68,68,,,35,42,38,15,20,,,,,,,,,,,,,,,,,0.5,Dem,Male,White or Caucasian,38
+588,wording,,br,,,,,,,,,12,12,53,12,4,72,3,2,40,,31,,,,,,,,,,,,,,,,,,,,,,,,,,,,75,80,59,0.25,Rep,Male,White or Caucasian,28
+589,wording,,no_br,,,,,,,,,69,92,84,66,94,85,65,92,,35,,49,,,,,,,,,,,,,,,,,,,,,,,,,,,,55,70,0.5,Ind,Male,White or Caucasian,40
+590,wording,,no_br,,,,,,,,,11,46,33,10,35,5,10,50,,12,35,,,,,,,,,,,,,,,,,,,,,,,,,,,,,33,40,0.5,Dem,Male,White or Caucasian,23
+591,timing,slow,no_br,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,15,,8,40,,,5,,40,55,8,37,,,,0.75,Dem,Female,White or Caucasian,35
+592,timing,fast,no_br,,,,,,,,,,,,,,,,,,,,,18,41,,7,,35,,,,82,12,17,30,,,,,,,,,,,,,,,,,1,Rep,Male,White or Caucasian,31
+593,wording,,no_br,30,25,5,25,15,20,15,5,,,,,,,,,15,,,30,,,,,,,,,,,,,,,,,,,,,,,,,,,,5,7,1,Dem,Female,Hispanic or Latino,54
+594,wording,,br,,,,,,,,,75,50,50,70,30,10,30,25,,20,,50,,,,,,,,,,,,,,,,,,,,,,,,,,,10,5,20,0.75,Dem,Female,White or Caucasian,48
+595,wording,,br,,,,,,,,,35,60,25,19,10,6,11,8,25,,24,,,,,,,,,,,,,,,,,,,,,,,,,,,,60,19,40,0.5,Dem,Female,White or Caucasian,52
+596,wording,,no_br,57,47,32,66,52,70,62,21,,,,,,,,,35,,62,,,,,,,,,,,,,,,,,,,,,,,,,,,,,16,33,1,Dem,Female,White or Caucasian,42

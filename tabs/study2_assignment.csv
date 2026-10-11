@@ -1,0 +1,7 @@
+study,timing_cond,soda_cond,n
+timing,fast,br,74
+timing,fast,no_br,68
+timing,slow,br,87
+timing,slow,no_br,55
+wording,NA,br,163
+wording,NA,no_br,149

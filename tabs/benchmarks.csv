@@ -1,0 +1,11 @@
+item,truth,base,party,label
+black,23.99225060574369,12.944415628833436,Democrats,Black
+lgb,6.284162223682609,3.883367174372644,Democrats,"Gay, lesbian, or bisexual"
+union,10.516310990555342,9.228448633250325,Democrats,Union members
+rich,2.1914372835742117,1.7387180741679502,Republicans,"Earn $250,000+"
+south,35.6522583711798,33.633594267297056,Republicans,Southern
+old,21.300646396319305,18.86951935511223,Republicans,Age 65+
+aa,8.7,5.7,Democrats,Atheist or agnostic
+evang,34.3,19,Republicans,Evangelical
+imm,13.2,NA,U.S. residents,Foreign-born
+blackpoor,23.1,NA,Poor Americans,Black
