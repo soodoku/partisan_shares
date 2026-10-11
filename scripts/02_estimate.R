@@ -1,72 +1,76 @@
 source("scripts/00_config.R")
 
 truth <- readr::read_csv(table_path("benchmarks.csv"), show_col_types = FALSE)
+write_table_csv <- function(df, name) readr::write_csv(df, table_path(paste0(name, ".csv")))
 
 # Signed error (the figure), plus absolute error and percentage bias.
 read_answers <- function(name) {
   read_data(name) |>
-    mutate(abs_err = abs(err), pct_err = 100 * err / truth)
+    mutate(abs_error = abs(error), pct_error = 100 * error / true_share)
 }
-l1 <- read_answers("answers_study1.csv")
-lw <- read_answers("answers_wording.csv")
-lt <- read_answers("answers_timing.csv")
+study1_answers <- read_answers("answers_study1.csv")
+wording_answers <- read_answers("answers_wording.csv")
+timing_answers <- read_answers("answers_timing.csv")
 
-effects <- bind_rows(
-  study1_effects(l1) |> mutate(study = "Study 1"),
-  pooled_effect(lt, "slow", label = "Time requirement") |> mutate(study = "Study 2"),
-  pooled_effect(lw, "percent", label = "Percent wording") |> mutate(study = "Study 2")
-)
-readr::write_csv(effects, table_path("effects.csv"))
-
-alt <- c("err", "abs_err", "pct_err") |>
-  map(\(y) {
-    bind_rows(
-      pooled_effect(lt, "slow", outcome = y, label = "Time requirement"),
-      pooled_effect(lw, "percent", outcome = y, label = "Percent wording")
-    ) |>
-      mutate(outcome = y)
-  }) |>
-  list_rbind()
-readr::write_csv(alt, table_path("effects_alt_outcomes.csv"))
-
-# Item-level contrasts.
-readr::write_csv(
+study2_effects <- function(outcome) {
   bind_rows(
-    item_contrasts(lt, "timing", c("fast", "slow")) |> mutate(experiment = "Timing"),
-    item_contrasts(lw, "wording", c("out_of_100", "percent")) |> mutate(experiment = "Wording"),
-    study1_pairs(l1) |>
-      imap(\(d, cond) item_contrasts(d, "condition", c("simpleask", cond))) |>
-      list_rbind() |>
-      mutate(experiment = "Study 1")
-  ),
-  table_path("item_contrasts.csv")
-)
+    pooled_effect(timing_answers, "time_requirement", outcome = outcome, label = "Time requirement"),
+    pooled_effect(wording_answers, "percent", outcome = outcome, label = "Percent wording")
+  )
+}
 
-readr::write_csv(ks_tests(l1), table_path("ks_tests.csv"))
+bind_rows(
+  study1_effects(study1_answers) |> mutate(study = "Study 1"),
+  study2_effects("error") |> mutate(study = "Study 2")
+) |>
+  write_table_csv("effects")
+
+c("error", "abs_error", "pct_error") |>
+  map(\(outcome) mutate(study2_effects(outcome), outcome = outcome)) |>
+  list_rbind() |>
+  write_table_csv("effects_alt_outcomes")
+
+bind_rows(
+  item_contrasts(timing_answers, "timing_condition", "time_pressure", "time_requirement") |>
+    mutate(experiment = "Timing"),
+  item_contrasts(wording_answers, "wording", "out_of_100", "percent") |>
+    mutate(experiment = "Wording"),
+  study1_pairs(study1_answers) |>
+    imap(\(answers, treatment) item_contrasts(answers, "condition", "standard", treatment)) |>
+    list_rbind() |>
+    mutate(experiment = "Study 1")
+) |>
+  write_table_csv("item_contrasts")
+
+write_table_csv(ks_tests(study1_answers), "ks_tests")
 
 # Looking answers up: share of answers on the nose, by timing condition.
-lt_exact <- on_the_nose(lt)
-readr::write_csv(
-  bind_rows(
-    item_contrasts(mutate(lt_exact, y = exact), "timing", c("fast", "slow")),
-    pooled_effect(lt_exact, "slow", outcome = "exact", label = "All items") |>
-      transmute(item = "all", mean_a = baseline, mean_b = treated, diff = estimate, lo, hi, p, n_a = n_answers)
-  ),
-  table_path("on_the_nose.csv")
-)
+timing_on_the_nose <- on_the_nose(timing_answers)
+bind_rows(
+  timing_on_the_nose |>
+    mutate(perceived = on_the_nose) |>
+    item_contrasts("timing_condition", "time_pressure", "time_requirement"),
+  pooled_effect(timing_on_the_nose, "time_requirement", outcome = "on_the_nose", label = "All items") |>
+    transmute(
+      item = "all", control_mean, treatment_mean, difference = estimate, conf_low, conf_high, p_value,
+      control_n = n_answers
+    )
+) |>
+  write_table_csv("on_the_nose")
 
-readr::write_csv(base_rate_comparison(read_study1(), truth), table_path("base_rates.csv"))
+write_table_csv(base_rate_comparison(read_study1(), truth), "base_rates")
 
-thermo <- thermometer_models(read_data("affect_2014.csv"))
-readr::write_csv(thermo$by_item, table_path("thermometer.csv"))
-readr::write_csv(thermo$pooled, table_path("thermometer_pooled.csv"))
+thermometer <- thermometer_models(read_data("affect_2014.csv"))
+write_table_csv(thermometer$by_item, "thermometer")
+write_table_csv(thermometer$pooled, "thermometer_pooled")
 
-s2 <- read_study2()
-soda <- soda_experiment(s2)
-readr::write_csv(soda$means, table_path("soda_means.csv"))
-readr::write_csv(soda$test, table_path("soda_test.csv"))
-
-readr::write_csv(timing_compliance(s2), table_path("timing_compliance.csv"))
+study2 <- read_study2()
+soda <- soda_experiment(study2)
+write_table_csv(soda$means, "soda_means")
+write_table_csv(soda$test, "soda_test")
+write_table_csv(timing_compliance(study2), "timing_compliance")
 
 # Sample flow for Study 2, all three experiments.
-readr::write_csv(count(s2, study, timing_cond, soda_cond, bayes_cond), table_path("study2_assignment.csv"))
+study2 |>
+  count(experiment, timing_condition, soda_condition, bayes_condition) |>
+  write_table_csv("study2_assignment")

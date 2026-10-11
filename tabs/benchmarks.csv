@@ -1,11 +1,11 @@
-item,truth,base,party,label
-black,23.99225060574369,12.944415628833436,Democrats,Black
-aa,8.7,5.7,Democrats,Atheist or agnostic
-lgb,6.284162223682609,3.883367174372644,Democrats,"Gay, lesbian, or bisexual"
-union,10.516310990555342,9.228448633250325,Democrats,Union members
-rich,2.1914372835742117,1.7387180741679502,Republicans,"Earn $250,000+"
-evang,34.3,19,Republicans,Evangelical
-south,35.6522583711798,33.633594267297056,Republicans,Southern
-old,21.300646396319305,18.86951935511223,Republicans,Age 65+
-imm,13.2,NA,U.S. residents,Foreign-born
-blackpoor,23.1,NA,Poor Americans,Black
+item,true_share,true_base_rate,party,label,short_label
+black,23.99225060574369,12.944415628833436,Democrats,Black,Dem. black
+atheist,8.7,5.7,Democrats,Atheist or agnostic,Dem. atheist/agnostic
+lgb,6.284162223682609,3.883367174372644,Democrats,"Gay, lesbian, or bisexual",Dem. LGB
+union,10.516310990555342,9.228448633250325,Democrats,Union members,Dem. union
+rich,2.1914372835742117,1.7387180741679502,Republicans,"Earn $250,000+",Rep. $250K+
+evangelical,34.3,19,Republicans,Evangelical,Rep. evangelical
+southern,35.6522583711798,33.633594267297056,Republicans,Southern,Rep. Southern
+over_65,21.300646396319305,18.86951935511223,Republicans,Age 65+,Rep. 65+
+foreign_born,13.2,NA,U.S. residents,Foreign-born,U.S. foreign-born
+black_poor,23.1,NA,Poor Americans,Black,Poor who are black

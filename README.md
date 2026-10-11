@@ -40,7 +40,7 @@ The outcome is signed error, the reported share minus the true share. Pooled eff
 - The Study 2 sample table described all 1,507 records, including a separate experiment, and gave 19.4% Latino. The 596 analyzed respondents are 5.4% Latino.
 - The base-rates result no longer claims to show that representativeness drives perceptions; anchoring and conversational inference fit it too.
 
-All pooled treatment effects reproduce the original Stata estimates; the tests pin them.
+All pooled treatment effects match the 2017 estimates; the tests pin them.
 
 ## Reproduce
 
