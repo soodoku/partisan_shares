@@ -68,3 +68,7 @@ make check     # analysis, figures, tables, manuscript, lint, tests
 | `scripts/` | `00_extract.R` (manual: writes `data/` from soodoku/partisan_heads and soodoku/partisan_typecast), then `01_prepare.R`, `02_estimate.R`, `03_exhibits.R` |
 | `tabs/`, `figs/` | Generated tables, figures and manuscript macros; `figs/study2_*.png` are screenshots of the Study 2 treatments |
 | `docs/instrument_draft_2016_06.pdf` | A June 2016 draft of the Study 2 instrument; the fielded version differs |
+
+<!-- adjacent:start -->
+
+<!-- adjacent:end -->
