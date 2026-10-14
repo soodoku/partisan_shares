@@ -71,4 +71,14 @@ make check     # analysis, figures, tables, manuscript, lint, tests
 
 <!-- adjacent:start -->
 
+## 🔗 Adjacent Repositories
+
+- [soodoku/partisan_identity](https://github.com/soodoku/partisan_identity)
+- [soodoku/partisan_heads_2015](https://github.com/soodoku/partisan_heads_2015) — Replication Materials for "The Partisans in our Heads" \(Ahler and Sood, 2015\)
+- [soodoku/partisan_pareto](https://github.com/soodoku/partisan_pareto) — Pareto Partisan: Are Partisans Willing to Bite Their Purse To Spite The Main Opposing Party?
+- [soodoku/partisan_principled](https://github.com/soodoku/partisan_principled) — Two survey experiments on partisan affect, fair-minded opponents, and biased allies: research note and reproducible analysis.
+- [soodoku/dp_misinformation](https://github.com/soodoku/dp_misinformation) — Deliberation and Misinformation \(Luskin and Sood\). Data, code, and manuscript.
+
+_Powered by [Adjacent](https://github.com/gojiplus/adjacent)_
+
 <!-- adjacent:end -->
