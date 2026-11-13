@@ -11,7 +11,7 @@ readr::write_csv(wording_long(study2, truth), data_path("answers_wording.csv"))
 readr::write_csv(timing_long(study2, truth), data_path("answers_timing.csv"))
 readr::write_csv(truth, table_path("benchmarks.csv"))
 
-# Sample composition: percent of respondents at each level, labelled for the table.
+# Sample composition: percent of respondents at each level, labeled for the table.
 composition <- function(x, variable, levels, labels = levels) {
   tibble(variable, level = labels, value = map_dbl(levels, \(l) 100 * mean(x == l, na.rm = TRUE)))
 }
